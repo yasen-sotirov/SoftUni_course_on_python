@@ -3,12 +3,11 @@ Exercise from Python fundamental cours at SoftUni - September 2022
 
 Content:
 
-Basic Syntax, Conditional Statements and Loops
-Exercise: Basic Syntax, Conditional Statements and Loops
-Data Types and Variables
-Exercise: Data Types and Variables
-HTTP Basics
-Lists Basics
+05. Basic Syntax, Conditional Statements and Loops
+06. Exercise: Basic Syntax, Conditional Statements and Loops
+08. Data Types and Variables
+09. Exercise: Data Types and Variables
+11. Lists Basics
 Exercise: Lists Basics
 HTML & CSS Basics
 Functions
