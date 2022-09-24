@@ -4,3 +4,8 @@
 #
 
 
+word = "Hello SoftUni"
+for letter in word:
+    if letter.isupper():
+        continue
+    print(letter * 2)
