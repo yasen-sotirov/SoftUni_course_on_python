@@ -16,7 +16,7 @@ for current_fight in range(1, lost_fights_count + 1):
         sword_counter += 1
         if current_fight % 2 == 0:
             shield_counter += 1
-    if shield_counter > 0 and shield_counter % 2 == 0:
+    if current_fight % 12 == 0:
         armor_counter += 1
 
 total_expenses = helmet_price * helmet_counter + \
