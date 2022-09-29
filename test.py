@@ -8,6 +8,7 @@
 # for letter in word:
 #     if letter.isupper():
 #         continue
-#     print(letter * 2)
+#     print(letter * 2
 
 
+print([range(1, 11)])
