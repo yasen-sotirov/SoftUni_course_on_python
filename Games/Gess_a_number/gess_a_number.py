@@ -1,3 +1,6 @@
+# Guess the Number!
+# https://replit.com/@ysotirov/Guessanumber#main.py
+
 import random
 player_guesses_counter = 0
 computer_number = random.randint(1, 100)
