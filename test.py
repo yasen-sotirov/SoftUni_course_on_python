@@ -10,5 +10,8 @@
 #         continue
 #     print(letter * 2
 
+# txt = '#Hello...Word.....'
+# print(txt.strip('#.'))
 
-print([range(1, 11)])
+txt = '#Hello...WoHrd...  H    h..'
+print(txt.replace('H', 'ee'))
