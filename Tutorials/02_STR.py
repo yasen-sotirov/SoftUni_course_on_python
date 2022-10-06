@@ -1,12 +1,15 @@
 "STRINGS"
 
-txt = "I like bananas!!"
+txt = "- I like bananas!!"
 
 "ЗАМЕНЯ ЕЛЕМЕНТ"
 # edit = txt.replace("bananas", "apples")
 
 "ПРЕМАХВА ЕЛЕМЕНТ ОТ НАЧАЛОТО И КРАЯ НА ТЕКСТА"
-# edit = txt.strip("!")
+# edit = txt.strip("-!")
+
+"ДОБАВЯ ЕЛЕМЕНТ ОТ НАЧАЛОТО И КРАЯ НА ТЕКСТА"
+# edit = txt.join('#@')
 
 "РАЗДРОБЯВА СТРИНГ НА ЕЛЕМЕНТИ"
 # edit = txt.split()
@@ -22,6 +25,8 @@ txt = "I like bananas!!"
 # edit = txt.lower()
 # edit = txt.upper()
 
+# edit = txt.islower()
+# edit = txt.isupper()
 
 print(edit)
 
