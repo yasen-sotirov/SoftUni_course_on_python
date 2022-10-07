@@ -1,49 +1,40 @@
 "LISTS"     # съхранява различни типове данни на едно място
-
-mix_list = [1, 3, 2, "a", "b", 4, 2, 2]
+            # лист с методите  https://www.w3schools.com/python/python_ref_list.asp
+mix_list = [1, 3, 2, "a", "b", 4, 88, 2, 2]
 number_list = [1, 5, 3, 8, 4, 2, 7, 6, 2]
-letters_list = ["k", "a", "c", "m"]
+letters_list = ["cat", "dog", "mouse", "T", 'J']
 
 "ДОБАВЯ В ЛИСТА"
 # new_var ='new'
 # letters_list.append(new_var)
 # print(letters_list)
 
-"ПОДРЕЖДА ПО АЗБУЧЕН РЕД"
-# letters_list.sort()
-# print(letters_list)
+"ОБЕДИНЯВА ЛИСТА В STRING"
+# list_to_string = '-'.join(letters_list)       # при "" все едно конкатенираме текста
+# print(list_to_string)
 
-# number_list.sort()
-# print(number_list)
-
-# letters_list.sort(reverse=True) # обръщане на реда
-
-# print(sorted(letters_list))     # или в принта
-# print(sorted([5, 1, 6, 3, 8, 4, 2, 7]))
-
-"ПРОЧИТА ЛИСТА НАОБРАТНО"
-# mix_list.reverse()
-# print(mix_list)
-
-"ПРОЧИТА ЛИСТА ОТ ИНДЕКС ДО ИНДЕКС СЪС СТЪПКА"
+"ПРОЧИТА ЛИСТА ОТ ИНДЕКС ДО ИНДЕКС СЪС СТЪПКА"      # като слайснг-а на стринг
 # edited = mix_list[2:5:2]
 # print(edited)
+# print(mix_list[4])
+# print(mix_list[-2])
+# print(mix_list[::-1])   # чете листа на обратно
 
-"ПРОЧИТА ЛИСТА НАОБРАТНО"
-# edited = mix_list[::-1]
-# print(edited)
+"РАЗМЕСТВАНЕ В ЛИСТА"
+# letters_list[1], letters_list[0] = letters_list[0], letters_list[1]     # swapping
+# print(letters_list)
 
-"ВАДИ ПОСЛЕДНИЯ (или по индекс) СИМВОЛ ОТ ЛИСТА"
-# char = mix_list.pop()
+"ТРИЕ / ВАДИ ПО ИНДЕКС (или последния) СИМВОЛ ОТ ЛИСТА"
+# char = mix_list.pop(-3)
 # print(mix_list)
 # print(char)
 
-"ПРЕМАХВА ПЪРВОТО СЪВПАДЕНИЕ В ЛИСТА"
+"ПРЕМАХВА ПЪРВИЯТ ЕЛЕМЕНТ В ЛИСТА (от ляво на дясно) "
 # mix_list.remove(2)
 # print(mix_list)
 
 "ТРИЕ ЕЛЕМЕНТ ПО ИНДЕКС"
-# del mix_list[0]
+# del mix_list[1]
 # print(mix_list)
 
 "ВМЪКВА (нещо) ПО ИНДЕКС"
@@ -67,5 +58,40 @@ letters_list = ["k", "a", "c", "m"]
 # print(second_list)
 
 "ТЪРСЕНЕ В ЛИСТ"
-if 'a' in mix_list:
-    print('ok')
+# if 'a' in mix_list:
+#     print('ok')
+
+"ПОДРЕЖДА ПО АЗБУЧЕН РЕД"
+# letters_list.sort()
+# print(letters_list)
+
+# number_list.sort()
+# print(number_list)
+
+# letters_list.sort(reverse=True) # обръщане на реда
+
+# print(sorted(letters_list))     # или в принта
+# print(sorted([5, 1, 6, 3, 8, 4, 2, 7]))
+
+"ОБРЪЩА ЛИСТА ОТЗАНД НАПРЕД"
+# mix_list.reverse()
+# print(mix_list)
+
+"ОБХОЖДА ЛИСТА"
+# по елемент
+# for element in mix_list:      # показва елементите в листа
+#     print(element)
+
+# по индекси
+# for index in range(0, len(mix_list)):       # показва индексите на листа
+#     print(index)
+
+# извиква елемент по индекса му
+# for index in range(0, len(mix_list) - 2):
+#     print(mix_list[index], end=', ')
+
+"WHILE"
+while letters_list:
+    current_element = letters_list[0]
+    letters_list.remove(current_element)
+    print(letters_list)
