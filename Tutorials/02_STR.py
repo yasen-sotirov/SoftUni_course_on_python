@@ -4,7 +4,6 @@ txt = "- I like bananas !!"
 txt_2 = 'Very much'
 
 
-
 "ЗАМЕНЯ ЕЛЕМЕНТ"
 # edit = txt.replace("bananas", "apples")
 
@@ -20,15 +19,15 @@ txt_2 = 'Very much'
 "БРОЙ ЕЛЕМЕНТИ В СТРИНГА"
 # edit = txt.count('n')
 
-"СЛАЙСИНГ"      # работи и за лист
-# edit = txt[2]     #показва кой символ е на индекс
+"СЛАЙСИНГ"              # работи и за лист
+# edit = txt[2]         # показва кой символ е на индекс
 # edit = txt[1:9:2]     # показва символи от индекс до индекс със стъпка
 
 "ГЛАВНИ и МАЛКИ БУКВИ"
 # edit = txt.lower()
 # edit = txt.upper()
 
-# edit = txt.islower()
+edit = txt.islower()
 # edit = txt.isupper()
 
 "ПОСТАВЯ СЕПАРАТОР МЕЖДУ СТРИНГОВЕТЕ"
