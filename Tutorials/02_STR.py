@@ -1,8 +1,10 @@
 "STRINGS"
 
 txt = "- I like bananas !!"
-txt_2 = 'Very much'
+txt_2 = 'Very much!'
 
+"РАЗДРОБЯВА СТРИНГ НА ЕЛЕМЕНТИ"
+# edit = txt.split()
 
 "ЗАМЕНЯ ЕЛЕМЕНТ"
 # edit = txt.replace("bananas", "apples")
@@ -27,7 +29,7 @@ txt_2 = 'Very much'
 # edit = txt.lower()
 # edit = txt.upper()
 
-edit = txt.islower()
+# edit = txt.islower()
 # edit = txt.isupper()
 
 "ПОСТАВЯ СЕПАРАТОР МЕЖДУ СТРИНГОВЕТЕ"
