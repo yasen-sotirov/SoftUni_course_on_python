@@ -1,5 +1,6 @@
-"LISTS"     # съхранява различни типове данни на едно място
-            # лист с методите  https://www.w3schools.com/python/python_ref_list.asp
+"""LISTS"""     # съхранява различни типове данни на едно място
+                # лист с методите  https://www.w3schools.com/python/python_ref_list.asp
+
 mix_list = [1, 3, 2, "a", "b", 4, 88, 2, 2]
 number_list = [1, 5, 3, 8, 4, 2, 7, 6, 2]
 letters_list = ["cat", "dog", "mouse", "T", 'J']
@@ -19,6 +20,10 @@ letters_list = ["cat", "dog", "mouse", "T", 'J']
 # print(mix_list[4])
 # print(mix_list[-2])
 # print(mix_list[::-1])   # чете листа на обратно
+
+"НАЙ-МАЛКО ЧИСЛО"
+smallest_num = min(number_list)
+print(smallest_num)
 
 "РАЗМЕСТВАНЕ В ЛИСТА"
 # letters_list[1], letters_list[0] = letters_list[0], letters_list[1]     # swapping
@@ -91,7 +96,8 @@ letters_list = ["cat", "dog", "mouse", "T", 'J']
 #     print(mix_list[index], end=', ')
 
 "WHILE"
-while letters_list:
-    current_element = letters_list[0]
-    letters_list.remove(current_element)
-    print(letters_list)
+# while letters_list:
+#     current_element = letters_list[0]
+#     letters_list.remove(current_element)
+#     print(letters_list)
+

@@ -4,7 +4,7 @@
 # Аргумент = променливите, които подаваме на функцията
 
 "ПОКАЗЖА ДОКУМЕНТАЦИШТА ЗА ДАДЕНА ФУНКЦИШ"
-def example_func():
-    """This function just say Hello"""
-    return "Hello"
-print(example_func.__doc__)
+# def example_func():
+#     """This function just say Hello"""
+#     return "Hello"
+# print(example_func.__doc__)

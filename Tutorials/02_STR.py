@@ -1,7 +1,9 @@
-"STRINGS"
+"""STRING"""    # колекция, низ от символи, които могат да бъдат обходени
+
 
 txt = "- I like bananas !!"
 txt_2 = 'Very much!'
+txt_3 = "123456"
 
 "РАЗДРОБЯВА СТРИНГ НА ЕЛЕМЕНТИ"
 # edit = txt.split()
@@ -32,13 +34,11 @@ txt_2 = 'Very much!'
 # edit = txt.islower()
 # edit = txt.isupper()
 
+"ЧИСЛА ЛИ СА"
+# edit = txt_3.isalnum()
+# edit = txt_3.isdigit()
+
 "ПОСТАВЯ СЕПАРАТОР МЕЖДУ СТРИНГОВЕТЕ"
 # print(txt, txt_2, sep='. . .')
 
 print(edit)
-
-
-
-
-
-
