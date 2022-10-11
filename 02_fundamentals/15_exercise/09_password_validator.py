@@ -34,7 +34,6 @@ def password_validator(some_password):
 
 
 password = input()
-
 is_valid = password_validator(password)
 if is_valid:
     print("Password is valid")
