@@ -27,4 +27,14 @@
 # num = 0.35
 # print(f"{num:.2%}")
 
+"МАП"
+def double_num(number):
+    if number % 2 == 0:
+        return number * 2
+
+num_list = [1, 2, 3, 4, 5, 6, 7, 8]
+result = map(double_num, num_list)
+print(list(result))
+
+
 

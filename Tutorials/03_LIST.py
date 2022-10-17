@@ -30,6 +30,7 @@ letters_list = ["cat", "dog", "mouse", "T", 'J']
 "ОБЕДИНЯВА ЛИСТА В STRING"
 # print('-'.join(letters_list))      # винаги връща лист
 # print(''.join(letters_list))       # при "" все едно конкатенираме текста
+print('\n'.join(letters_list))       # печати всеки елемент на нов ред
 
 "ПРОЧИТА ЛИСТА ОТ ИНДЕКС ДО ИНДЕКС СЪС СТЪПКА"      # като слайснг-а на стринг
 # edited = mix_list[2:5:2]
