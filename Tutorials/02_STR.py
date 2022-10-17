@@ -4,45 +4,53 @@
 txt = "- I like bananas !!"
 txt_2 = 'Very much!'
 txt_3 = "123456"
+txt_4 = "1 2 3 4 5 6"
+
+"ПРЕВРЪЩА STR В ЛИСТ ОТ ЧИСЛА"
+nums = [int(el) for el in input().split(', ')]
 
 "РАЗДРОБЯВА СТРИНГ НА ЕЛЕМЕНТИ"
-# edit = txt.split()
+# print(txt.split())        # винаги връща лист
+
+"ОТ STR ПРАВИ ЛИСТ ОТ ЧИСЛА"
+# list_of_ints = [int(x) for x in txt_3]
+# print(list_of_ints)
+
+# list_of_strings = txt_4.split(' ')
+# print(list(map(int, list_of_strings)))
 
 "ЗАМЕНЯ ЕЛЕМЕНТ"
-# edit = txt.replace("bananas", "apples")
+print(txt.replace("bananas", "apples"))
 
 "ПРЕМАХВА ЕЛЕМЕНТ ОТ НАЧАЛОТО И КРАЯ НА ТЕКСТА"
-# edit = txt.strip("-!")
+print(txt.strip("-!"))
 
 "ДОБАВЯ ЕЛЕМЕНТ ОТ НАЧАЛОТО И КРАЯ НА ТЕКСТА"
-# edit = txt.join('!@')
-
-"РАЗДРОБЯВА СТРИНГ НА ЕЛЕМЕНТИ"
-# edit = txt.split()
+print(txt.join('!@'))
 
 "БРОЙ ЕЛЕМЕНТИ В СТРИНГА"
-# edit = txt.count('n')
+# print(txt.count('n'))
 
 "ASCII ТАБЛИЦА"
 # print(f'Кодът на буквата е: {ord("A")}')
 # print(f'Буквата е: {chr(100)}')
 
 "СЛАЙСИНГ"              # работи и за лист
-# edit = txt[2]         # показва кой символ е на индекс
-# edit = txt[1:9:2]     # показва символи от индекс до индекс със стъпка
+# print(txt[2])           # показва кой символ е на индекс
+# print(txt[1:9:2])       # показва символи от индекс до индекс със стъпка
 
 "ГЛАВНИ и МАЛКИ БУКВИ"
-# edit = txt.lower()
-# edit = txt.upper()
+# print(txt.lower())
+# print(txt.upper())
 
-# edit = txt.islower()
-# edit = txt.isupper()
+# print(txt.islower())
+# print(txt.isupper())
 
 "ЧИСЛА ЛИ СА"
-# edit = txt_3.isalnum()
-# edit = txt_3.isdigit()
+# print(txt_3.isalnum())
+# print(txt_3.isdigit())
 
 "ПОСТАВЯ СЕПАРАТОР МЕЖДУ СТРИНГОВЕТЕ"
 # print(txt, txt_2, sep='. . .')
 
-# print(edit)
+
