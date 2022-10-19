@@ -15,6 +15,9 @@ letters_list = ["cat", "dog", "mouse", "T", 'J']
 # print([el ** 2 for el in number_list if el % 2 == 0])
 # print(["even" if el % 2 == 0 else "odd" for el in number_list])
 
+# nums = [int(el) for el in input().split(', ')]
+# print(nums)
+
 "ДОБАВЯ В ЛИСТА"
 # new_var = 'new'
 # letters_list.append(new_var)

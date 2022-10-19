@@ -1,12 +1,10 @@
-<<<<<<< Updated upstream
-a = input()
-print(a.count('True'))
+input_str = str(input("Enter your name: "))
 
-b = []
+# iterate over the input string using for loop
 
-p
-=======
-nums = [int(el) for el in input().split(', ')]
-print(nums)
-print( type(nums))
->>>>>>> Stashed changes
+for ch in input_str:
+    # return true if the character is alphabet otherwise return False
+
+    res = ch.isalpha()
+
+    print(ch, res)

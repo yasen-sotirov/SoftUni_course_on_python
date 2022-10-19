@@ -7,7 +7,7 @@ txt_3 = "123456"
 txt_4 = "1 2 3 4 5 6"
 
 "ПРЕВРЪЩА STR В ЛИСТ ОТ ЧИСЛА"
-nums = [int(el) for el in input().split(', ')]
+# nums = [int(el) for el in input().split(', ')]
 
 "РАЗДРОБЯВА СТРИНГ НА ЕЛЕМЕНТИ"
 # print(txt.split())        # винаги връща лист
@@ -20,13 +20,13 @@ nums = [int(el) for el in input().split(', ')]
 # print(list(map(int, list_of_strings)))
 
 "ЗАМЕНЯ ЕЛЕМЕНТ"
-print(txt.replace("bananas", "apples"))
+# print(txt.replace("bananas", "apples"))
 
 "ПРЕМАХВА ЕЛЕМЕНТ ОТ НАЧАЛОТО И КРАЯ НА ТЕКСТА"
-print(txt.strip("-!"))
+# print(txt.strip("-!"))
 
 "ДОБАВЯ ЕЛЕМЕНТ ОТ НАЧАЛОТО И КРАЯ НА ТЕКСТА"
-print(txt.join('!@'))
+# print(txt.join('!@'))
 
 "БРОЙ ЕЛЕМЕНТИ В СТРИНГА"
 # print(txt.count('n'))
@@ -47,8 +47,8 @@ print(txt.join('!@'))
 # print(txt.isupper())
 
 "ЧИСЛА ЛИ СА"
-# print(txt_3.isalnum())
-# print(txt_3.isdigit())
+print(txt_3.isalnum())
+print(txt_3.isdigit())
 
 "ПОСТАВЯ СЕПАРАТОР МЕЖДУ СТРИНГОВЕТЕ"
 # print(txt, txt_2, sep='. . .')
