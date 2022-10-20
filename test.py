@@ -1,10 +1,12 @@
-input_str = str(input("Enter your name: "))
+# input_str = str(input())
+# for ch in input_str:
+#     res = ch.isalpha()
+#     print(ch, res)
 
-# iterate over the input string using for loop
+a = int(input())
+b = int(input())
 
-for ch in input_str:
-    # return true if the character is alphabet otherwise return False
 
-    res = ch.isalpha()
+is_it_true = a > b
 
-    print(ch, res)
+print(is_it_true)
