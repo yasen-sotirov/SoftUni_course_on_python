@@ -39,6 +39,10 @@ txt_4 = "1 2 3 4 5 6"
 # print(txt[2])           # показва кой символ е на индекс
 # print(txt[1:9:2])       # показва символи от индекс до индекс със стъпка
 
+"ЧЕТЕ СТРИНГА НАОБРАТНО"
+# print(txt_3[::-1])
+# print(''.join(reversed(txt_3)))
+
 "ГЛАВНИ и МАЛКИ БУКВИ"
 # print(txt.lower())
 # print(txt.upper())
@@ -47,8 +51,8 @@ txt_4 = "1 2 3 4 5 6"
 # print(txt.isupper())
 
 "ЧИСЛА ЛИ СА"
-print(txt_3.isalnum())
-print(txt_3.isdigit())
+# print(txt_3.isalnum())
+# print(txt_3.isdigit())
 
 "ПОСТАВЯ СЕПАРАТОР МЕЖДУ СТРИНГОВЕТЕ"
 # print(txt, txt_2, sep='. . .')
