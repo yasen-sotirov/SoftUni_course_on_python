@@ -17,6 +17,8 @@ expression = input()
 per_stack = []
 
 for index in range(len(expression)):
+    a = expression[index]
+
     if expression[index] == '(':
         per_stack.append(index)
 
