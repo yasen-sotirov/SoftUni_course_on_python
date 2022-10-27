@@ -7,17 +7,13 @@ Hint
 """
 
 
-notes = input()
-to_do_list = []
+to_do_list = [0] * 10
+command = input()
 
-while not notes == "End":
-    to_do_list.append(notes)
-    notes = input()
+while not command == 'End':
+    importance, note = command.split('-')
+    current_index = int(importance) - 1
+    to_do_list[current_index] = note
+    command = input()
 
-to_do_list.sort()
-new_list = str("-".join(to_do_list))
-
-to_do_list.split("-")
-
-
-print(new_list)
+print([element for element in to_do_list if not element == 0])

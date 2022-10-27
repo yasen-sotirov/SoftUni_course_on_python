@@ -7,37 +7,33 @@ number_list_2 = [10, 20, 30, 40, 50, 60]
 number_list_3 = [1, 2, 3, 4, 5]
 letters_list = ["cat", "dog", "mouse", "hello", 'world']
 
-"COMPREHENSION"
-# result_list = []
-# for el in number_list:
-#     if el % 2 == 0:
-#         result_list.append(el ** 2) # или .append(int(el))
-# print(result_list)
 
-# print([el ** 2 for el in number_list if el % 2 == 0])
-# print(["even" if el % 2 == 0 else "odd" for el in number_list])
-
-# nums = [int(el) for el in input().split(', ')]
-# print(nums)
-
-
-"ДОБАВЯ В ЛИСТА"
-# new_var = 'new'
-# letters_list.append(new_var)
-# print(letters_list)
-
+"ДОБАВЯ НОВИ ЕЛЕМЕНТИ В ЛИСТА"
+# mix_list.append("new_var")
 # mix_list.append(-int(2) * 2)
 # print(mix_list)
 
+"ДОБАВЯ КЪМ СЪЩ ЕЛЕМЕНТИ В ЛИСТА"
+# number_list[0] += 100
+# print(number_list)
 
-"ДОБАВЯ МНОЖЕСТВО ЕЛЕМЕНТИ В ЛИСТА"       #или само един string
+# letters_list[0] += '_MO'
+# print(letters_list)
+
+
+"ЗАМЕНЯ СЪЩ ЕЛЕМЕНТИ В ЛИСТА"
+# letters_list[0] = "TOM"
+# print(letters_list)
+
+
+"ДОБАВЯ ДРУГ ЛИСТ В ЛИСТА"       #или само един string
 # number_list.extend(letters_list)
 # print(number_list)
 
 
 "ОБЕДИНЯВА ЛИСТА В STRING"
 # print('-'.join(letters_list))      # винаги връща лист
-# print(''.join(letters_list))       # при "" все едно конкатенираме текста
+# print(' '.join(letters_list))       # при "" все едно конкатенираме текста
 # print('\n'.join(letters_list))       # печати всеки елемент на нов ред
 
 
@@ -157,14 +153,14 @@ letters_list = ["cat", "dog", "mouse", "hello", 'world']
 # for element in mix_list:      # показва елементите в листа
 #     print(element)
 
-# for index in range(0, len(mix_list)):       # показва индексите на листа
-#     print(index)
+for index in range(0, len(mix_list)):       # показва индексите на листа
+    print(index)
 
 # for index in range(0, len(mix_list) - 2):     # извиква елемент по индекса му
 #     print(mix_list[index], end=', ')
 
 
-"ВАДИ УНИКАЛНИТЕ ЕЛЕМЕНТИ ОТ ЛИСТА"
+"ПРЕМАХВА ПОВТАРЯЩИТЕ СЕ ЕЛЕМЕНТИ ОТ ЛИСТА - SET" # RAZBYRKVA ELEMENTITE
 # print(list(set(mix_list)))
 
 
@@ -186,12 +182,14 @@ letters_list = ["cat", "dog", "mouse", "hello", 'world']
 # def cubed_num(digit):
 #     return digit ** 2
 # print(list(map(cubed_num, number_list)))
-#
+
 # print(list(map(lambda num: num ** 2, number_list)))
 
 # print(list(map(lambda x, y: x*y, number_list_2, number_list_3)))
 
 # print(list(map(str.upper, letters_list)))
+
+# print(list(map(float, number_list)))
 
 # measurement = [
 #     {'length': 2.5, 'width': 2},
@@ -211,3 +209,10 @@ letters_list = ["cat", "dog", "mouse", "hello", 'world']
 #     letters_list.remove(current_element)
 #     print(letters_list)
 
+
+"ОБРЪЩА ЛИСТА"     # или слайсинг result = letters_list[::-1]
+# result = reversed(letters_list)   # build-in функция, която прави нова колекция, която е обърната
+# print(list(result))
+
+# letters_list.reverse()      # метод, който обръща оригиналната колекция
+# print(letters_list)

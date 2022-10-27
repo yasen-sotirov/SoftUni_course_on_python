@@ -17,7 +17,7 @@ txt_4 = "1 2 3 4 5 6"
 # print(list_of_ints)
 
 # list_of_strings = txt_4.split(' ')
-# print(list(map(int, list_of_strings)))
+# print(list(map(int, list_of_strings)))        # мап-ване
 
 "ЗАМЕНЯ ЕЛЕМЕНТ"
 # print(txt.replace("bananas", "apples"))
@@ -50,9 +50,10 @@ txt_4 = "1 2 3 4 5 6"
 # print(txt.islower())
 # print(txt.isupper())
 
-"ЧИСЛА ЛИ СА"
-# print(txt_3.isalnum())
-# print(txt_3.isdigit())
+"БУКВИ ЛИ СА ИЛИ ЧИСЛА"
+print(txt_3.isalnum())
+print(txt_3.isdigit())
+print(txt_3.isnumeric())
 
 "ПОСТАВЯ СЕПАРАТОР МЕЖДУ СТРИНГОВЕТЕ"
 # print(txt, txt_2, sep='. . .')
