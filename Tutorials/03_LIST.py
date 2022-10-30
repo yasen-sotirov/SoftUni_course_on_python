@@ -115,6 +115,8 @@ letters_list = ["cat", "dog", "mouse", "hello", 'world']
 # second_list = mix_list.copy()
 # print(second_list)
 
+"С КАКВО ЗАПОЧВА"
+print(list([item for item in letters_list if item.startswith("d")]))
 
 "ТЪРСЕНЕ В ЛИСТ"
 # if 'a' in mix_list:
@@ -153,8 +155,8 @@ letters_list = ["cat", "dog", "mouse", "hello", 'world']
 # for element in mix_list:      # показва елементите в листа
 #     print(element)
 
-for index in range(0, len(mix_list)):       # показва индексите на листа
-    print(index)
+# for index in range(0, len(mix_list)):       # показва индексите на листа
+#     print(index)
 
 # for index in range(0, len(mix_list) - 2):     # извиква елемент по индекса му
 #     print(mix_list[index], end=', ')
