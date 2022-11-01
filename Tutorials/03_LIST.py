@@ -1,4 +1,5 @@
-"""LISTS"""     # съхранява различни типове данни на едно място
+"LISTS"         # съхранява различни типове данни на едно място
+                # референтен тип данни:  names = [1, 2, 3]  asd = names - едно и също са
                 # лист с методите  https://www.w3schools.com/python/python_ref_list.asp
 
 mix_list = [1, 3, 2, "a", "b", 4, 88, 2, 2]
@@ -80,9 +81,13 @@ letters_list = ["cat", "dog", "mouse", "hello", 'world']
 # print("{:.2f}".format(sum(number_list)))
 
 
-"РАЗДЕЛЯ ЧИСЛАТА В ЛИСТА"
+"РАЗДЕЛЯ ЧИСЛАТА В ЛИСТА - разопакова"
 # print(*number_list)             # „ * “ разопакова листа
 # print(*number_list, sep="_")    # разопакова листа и слага сепаратор между елементите
+
+# num_1, num_2, num_3, num_4, num_5 = number_list_3
+# print(num_1)
+# print(num_4)
 
 
 "ВМЪКВА (нещо) ПО ИНДЕКС"
@@ -116,7 +121,8 @@ letters_list = ["cat", "dog", "mouse", "hello", 'world']
 # print(second_list)
 
 "С КАКВО ЗАПОЧВА"
-print(list([item for item in letters_list if item.startswith("d")]))
+# print(list([item for item in letters_list if item.startswith("d")]))
+
 
 "ТЪРСЕНЕ В ЛИСТ"
 # if 'a' in mix_list:
@@ -151,7 +157,7 @@ print(list([item for item in letters_list if item.startswith("d")]))
 # print(mix_list + letters_list)
 
 
-"ОБХОЖДА ЛИСТА ПО ЕЛЕМЕНТ И ПО ИНДЕКС"
+"ОБХОЖДА ЛИСТА ПО ЕЛЕМЕНТ И ПО ИНДЕКС - итерира"
 # for element in mix_list:      # показва елементите в листа
 #     print(element)
 
@@ -218,3 +224,8 @@ print(list([item for item in letters_list if item.startswith("d")]))
 
 # letters_list.reverse()      # метод, който обръща оригиналната колекция
 # print(letters_list)
+
+"BOOLEAN IN"
+# boolean = 5 in number_list_3
+# print(boolean)
+# print(6 in number_list_3)
