@@ -51,11 +51,19 @@ txt_4 = "1 2 3 4 5 6"
 # print(txt.isupper())
 
 "БУКВИ ЛИ СА ИЛИ ЧИСЛА"
-print(txt_3.isalnum())
-print(txt_3.isdigit())
-print(txt_3.isnumeric())
+# print(txt_3.isalnum())
+# print(txt_3.isdigit())
+# print(txt_3.isnumeric())
 
 "ПОСТАВЯ СЕПАРАТОР МЕЖДУ СТРИНГОВЕТЕ"
 # print(txt, txt_2, sep='. . .')
 
+"МАЛКИ БУКВИ"
+# print(txt.lower())
 
+"ВСЯКА БУКВА НА НОВ РЕД"
+# for letter in txt:
+#     print(letter)
+
+"ПРОВЕРЯВА ДАЛИ СА ЕДНАКВИ"
+print(isinstance('123', str))

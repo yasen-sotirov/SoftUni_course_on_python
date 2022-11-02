@@ -120,6 +120,7 @@ letters_list = ["cat", "dog", "mouse", "hello", 'world']
 # second_list = mix_list.copy()
 # print(second_list)
 
+
 "С КАКВО ЗАПОЧВА"
 # print(list([item for item in letters_list if item.startswith("d")]))
 
