@@ -26,11 +26,11 @@ names_ages = {"Ines": 27,
 # print(my_dict.get(3))
 
 
-"ДАВА СПИСЪК С VALUE"
+"ВРЪЩА СПИСЪК С VALUE"
 # print(list(num_dict.values()))
 
 
-"ДАВА СПИСЪК СУМАТА НА VALUE"
+"ВРЪЩА СПИСЪК СУМАТА НА VALUE"
 # print(sum(num_dict.values()))
 
 
@@ -56,6 +56,7 @@ names_ages = {"Ines": 27,
 # print(sorted(num_dict.items(), key=lambda x: - x[1]))                     # обръща реда на int
 
 # print(sorted(names_ages.items(), key=lambda x: (x[0], - x[1])))     # сортира по два параметъра
+
 
 "ВРЪЩА VALUE"       # a
 # print(my_dict.pop("b"))   # връща value по ключ
@@ -103,6 +104,24 @@ names_ages = {"Ines": 27,
 #     print(f"key is {key}, and value is {value}")
 
 
+"DICT COMPREHENSION"
+# print({value: key for key, value in names_ages.items() if value % 2 == 0})
+
+# data = [("Peter", 22), ("Amy", 18), ("George", 35)]     # връща dict от тюпъли
+# print({key: value for (key, value) in data})
+# print(dict(data))
+
+# num_list = [1, 2, 3, 4]
+# print({num: num ** 3 for num in num_list})    # от лист връща dict със стойноста на 3та степен
+
+
+# even_years = {}
+# for key, value in names_ages.items():
+#     if value % 2 == 0:
+#         even_years[key] = value
+# print(even_years)
+
+
 "ПРЕВЪРЩА СПИСЪЦИ В РЕЧНИК"     #
 # keys = ['a', 'b', 'c', 'd']
 # values = [1, 2, 3]
@@ -126,9 +145,6 @@ names_ages = {"Ines": 27,
 # print(3 in num_dict.values())   # търси в value
 
 
-"DICT COMPREHENSION"
-
-
 "ИЗПРАЗВАНЕ НА РЕЧНИКА"
 # print(my_dict.clear())
 
@@ -138,4 +154,3 @@ names_ages = {"Ines": 27,
 
 "ВРЪЩА СПИСЪК С ТЮПЪЛИ"
 # print(num_dict.items())
-
