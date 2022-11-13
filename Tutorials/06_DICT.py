@@ -14,6 +14,43 @@ names_ages = {"Ines": 27,
               "Tosho": 46,
               "Maria": 52}      # така е по PEP стандарт
 
+
+"ДОБАВЯНЕ В РЕЧНИКА"
+# my_dict["eyes color"] = "green"
+# print(my_dict)
+
+# names = classes["1A"]             # дава ни достъп до листа и вече работим с него
+# names.append("appended name")     # както обикновен лист
+# print(classes)
+
+# for key in classes:
+#     classes[key].append("from the loop")
+# print(classes)
+
+# for key in num_dict:
+#     num_dict[key] *= 2
+# print(num_dict)
+
+
+"ПРОМЯНА В РЕЧНИКА"
+# my_dict["eyes color"] = "green"
+# print(my_dict)
+# my_dict["b"] = 30
+# print(my_dict)
+
+# names = classes["1A"]             # дава ни достъп до листа и вече работим с него
+# names.append("appended name")     # както обикновен лист
+# print(classes)
+
+# for key in classes:
+#     classes[key].append("from the loop")
+# print(classes)
+
+# for key in num_dict:
+#     num_dict[key] *= 2
+# print(num_dict)
+
+
 "ИЗВИКВАНЕ ПО ВЛОЖЕН РЕЧНИК"
 # print(classes['1A'][1])
 # print(students['№1']['name'])
@@ -61,25 +98,6 @@ names_ages = {"Ines": 27,
 "ВРЪЩА VALUE"       # a
 # print(my_dict.pop("b"))   # връща value по ключ
 # print(my_dict.popitem())    # връща последната двойка като тюпъл
-
-
-"ДОБАВЯНЕ и ПРОМЯНА В РЕЧНИКА"
-# my_dict["eyes color"] = "green"
-# print(my_dict)
-# my_dict["b"] = 30
-# print(my_dict)
-
-# names = classes["1A"]             # дава ни достъп до листа и вече работим с него
-# names.append("appended name")     # както обикновен лист
-# print(classes)
-
-# for key in classes:
-#     classes[key].append("from the loop")
-# print(classes)
-
-# for key in num_dict:
-#     num_dict[key] *= 2
-# print(num_dict)
 
 
 "ИЗВИКВАНЕ VALUE ПО ИНДЕКС"

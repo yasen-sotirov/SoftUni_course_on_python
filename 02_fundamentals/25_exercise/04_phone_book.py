@@ -8,16 +8,19 @@ Your program should be able to perform a search of contact by name and print its
 
 
 phonebook = {}
-while True:
-    entry = input()
-    if "-" not in entry:
-        break
-    name, phone = input().split("-")
-    phonebook[name] = phone
+command = input()
 
-for search in range(int(entry)):
-    searched_name = input()
-    if searched_name in phonebook.keys():
-        print(f"{searched_name} -> {phonebook[searched_name]}")
+while not command.isnumeric():
+    name, number = command.split("-")
+    if name not in phonebook.keys():
+        phonebook[name] = number
+    phonebook[name] = number
+
+    command = input()
+
+for contact in range(int(command)):
+    current_name = input()
+    if current_name in phonebook.keys():
+        print(f"{current_name} -> {phonebook[current_name]}")
     else:
-        print(f"Contact {searched_name} does not exist.")
+        print(f"Contact {current_name} does not exist.")

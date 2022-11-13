@@ -6,15 +6,17 @@ Print the resources and their quantities in the following format:
 The quantities will be in the range [1 … 2 000 000 000].
 """
 
-resources_dict = {}
-while True:
-    current_resource = input()
-    if current_resource == 'stop':
-        break
-    current_quantity = int(input())
-    if current_resource not in resources_dict:
-        resources_dict[current_resource] = 0
-    resources_dict[current_resource] += current_quantity
+resource_list = {}
+command = input()
 
-for resource, quantity in resources_dict.items():
+while not command == "stop":
+    resource = command
+    if resource not in resource_list:
+        resource_list[resource] = 0
+
+    quantity = int(input())
+    resource_list[resource] += quantity
+    command = input()
+
+for resource, quantity in resource_list.items():
     print(f"{resource} -> {quantity}")
