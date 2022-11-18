@@ -51,7 +51,7 @@ txt_4 = "1 2 3 4 5 6"
 # print(txt.isupper())
 
 "БУКВИ ЛИ СА ИЛИ ЧИСЛА"
-# print(txt_3.isalnum())
+print(txt_3.isalnum())
 # print(txt_3.isdigit())
 # print(txt_3.isnumeric())
 
@@ -66,4 +66,4 @@ txt_4 = "1 2 3 4 5 6"
 #     print(letter)
 
 "ПРОВЕРЯВА ДАЛИ СА ЕДНАКВИ"
-print(isinstance('123', str))
+# print(isinstance('123', str))
