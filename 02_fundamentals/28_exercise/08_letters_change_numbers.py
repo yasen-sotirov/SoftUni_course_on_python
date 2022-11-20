@@ -24,29 +24,28 @@ o	The total sum of all processed numbers, formatted to the second decimal separa
 data = input().split()
 sum_list = []
 
-for _ in range(1, len(data)):
-    for sequence in data:
-        number = int(sequence[1:-1:1])
-        result_1 = 0
-        result_2 = 0
-        if sequence[0].isupper():
-            first_letter_position = int(ord(sequence[0])) - 64
-            result_1 += (number / first_letter_position)
-        if sequence[0].islower():
-            first_letter_position = int(ord(sequence[0])) - 96
-            result_1 += (number * first_letter_position)
 
-        if sequence[-1].isupper():
-            last_letter_position = int(ord(sequence[-1])) - 64
-            result_2 -= last_letter_position
-            total_sum = result_1 - result_2
-        if sequence[-1].islower():
-            last_letter_position = int(ord(sequence[- 1])) - 96
-            result_2 += last_letter_position
-            total_sum = result_1 + result_2
-        sum_list.append(total_sum)
+for sequence in data:
+    number = int(sequence[1:-1])
+    result_1 = 0
+    result_2 = 0
+
+    if sequence[0].isupper():
+        first_letter_position = int(ord(sequence[0])) - 64
+        result_1 += (number / first_letter_position)
+    else:
+        first_letter_position = int(ord(sequence[0])) - 96
+        result_1 += (number * first_letter_position)
+
+    if sequence[-1].isupper():
+        last_letter_position = int(ord(sequence[-1])) - 64
+        result_2 = last_letter_position
+        total_sum = result_1 - result_2
+    else:
+        last_letter_position = int(ord(sequence[- 1])) - 96
+        result_2 = last_letter_position
+        total_sum = result_1 + result_2
+    sum_list.append(total_sum)
 
 final_sum = sum(sum_list)
 print(f"{final_sum:.2f}")
-
-
