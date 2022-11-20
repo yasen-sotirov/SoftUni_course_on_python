@@ -107,8 +107,8 @@ letters_list = ["cat", "dog", "mouse", "hello", 'world']
 
 
 "БРОЙ КОЛКО (неща) ИМА В ЛИСТА"
-# edit = mix_list.count('b')
-# print(edit)
+# print(mix_list.count('b'))
+
 
 
 "ДАВА ИНДЕКС И ЕЛЕМЕНТА, КОЙТО Е ТАМ"

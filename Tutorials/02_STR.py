@@ -2,9 +2,11 @@
 
 
 txt = "- I like bananas !!"
-txt_2 = 'Very much!'
+txt_2 = 'Very_much'
 txt_3 = "123456"
 txt_4 = "1 2 3 4 5 6"
+txt_5 = "123abc"
+txt_6 = "123 abc"
 
 "ПРЕВРЪЩА STR В ЛИСТ ОТ ЧИСЛА"
 # nums = [int(el) for el in input().split(', ')]
@@ -21,6 +23,7 @@ txt_4 = "1 2 3 4 5 6"
 
 "ЗАМЕНЯ ЕЛЕМЕНТ"
 # print(txt.replace("bananas", "apples"))
+# print(txt.replace("bananas", ""))           # или просто премахва
 
 "ПРЕМАХВА ЕЛЕМЕНТ ОТ НАЧАЛОТО И КРАЯ НА ТЕКСТА"
 # print(txt.strip("-!"))
@@ -32,28 +35,27 @@ txt_4 = "1 2 3 4 5 6"
 # print(txt.count('n'))
 
 "ASCII ТАБЛИЦА"
-# print(f'Кодът на буквата е: {ord("A")}')
-# print(f'Буквата е: {chr(100)}')
+print(f'Кодът на буквата е: {ord("A")}')
+print(f'Буквата е: {chr(100)}')
 
 "СЛАЙСИНГ"              # работи и за лист
 # print(txt[2])           # показва кой символ е на индекс
 # print(txt[1:9:2])       # показва символи от индекс до индекс със стъпка
 
-"ЧЕТЕ СТРИНГА НАОБРАТНО"
 # print(txt_3[::-1])
 # print(''.join(reversed(txt_3)))
 
 "ГЛАВНИ и МАЛКИ БУКВИ"
-# print(txt.lower())
-# print(txt.upper())
-
-# print(txt.islower())
-# print(txt.isupper())
+# print(txt.lower())          # прави всички букви малки
+# print(txt.upper())          # прави всички букви главни
+#
+# print(txt_6.islower())      # проверява, ако има букви дали са малки
+# print(txt.isupper())        # проверява, ако има букви дали са главни
 
 "БУКВИ ЛИ СА ИЛИ ЧИСЛА"
-print(txt_3.isalnum())
-# print(txt_3.isdigit())
-# print(txt_3.isnumeric())
+# print(txt_5.isalnum())        # връща True ако всички са числа и/или букви: alpha_numerical
+# print(txt_4.isdigit())        # връща True ако всички са числа
+# print(txt_6.isnumeric())        #
 
 "ПОСТАВЯ СЕПАРАТОР МЕЖДУ СТРИНГОВЕТЕ"
 # print(txt, txt_2, sep='. . .')
