@@ -1,5 +1,5 @@
 """STRING"""    # колекция, низ от символи, които могат да бъдат обходени
-
+import re
 
 txt = "- I like bananas !! "
 txt_2 = 'Very_much'
@@ -24,6 +24,9 @@ txt_6 = "123 abc"
 "ЗАМЕНЯ ЕЛЕМЕНТ"
 # print(txt.replace("bananas", "apples"))
 # print(txt.replace("bananas", ""))           # или просто премахва
+
+"ЗАМЕНЯ ВСИЧКИ ЕЛЕМЕНТ - REGEX"
+# print(re.sub("\s", "-", txt))
 
 "ПРЕМАХВА ЕЛЕМЕНТ ОТ НАЧАЛОТО И КРАЯ НА ТЕКСТА"
 # print(txt.strip("-!"))
