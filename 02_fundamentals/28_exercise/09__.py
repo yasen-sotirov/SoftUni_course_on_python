@@ -1,25 +1,28 @@
 data = input()
-repetition_symbols = ""
-number_of_repetition = ""
-previews_symbol = ""
+
+letter = ""
+number = ""
+last_char_is_letter = True
 final_text = ""
-unique_symbols = []
 
-for current_symbol in data:
-    if current_symbol.isdigit():
-        number_of_repetition += current_symbol
-        previews_symbol = "digit"
+
+for current_char in data:
+    if not last_char_is_letter and current_char.isdigit():
+        number += current_char
+
+    elif current_char.isalpha() and not last_char_is_letter:
+        final_text += letter * int(number)
+        letter = ""
+        number = ""
+        last_char_is_letter = True
+        letter = current_char
+
+    elif not current_char.isdigit():
+        letter += current_char
     else:
-        repetition_symbols += current_symbol
-        current_symbol = current_symbol.upper()
-        previews_symbol = "letter"
-        if current_symbol not in unique_symbols:
-            unique_symbols.append(current_symbol)
+        number += current_char
+        last_char_is_letter = False
 
-    if number_of_repetition > 0:
-        final_text += repetition_symbols.upper() * number_of_repetition
-        number_of_repetition = 0
-        repetition_symbols = ""
+final_text += letter * int(number)
+print(final_text.upper())
 
-print(f"Unique symbols used: {len(unique_symbols)}")
-print(final_text)
