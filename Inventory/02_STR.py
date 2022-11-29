@@ -22,8 +22,9 @@ txt_6 = "123 abc"
 # print(list(map(int, list_of_strings)))        # мап-ване
 
 "ЗАМЕНЯ ЕЛЕМЕНТ"
-# print(txt.replace("bananas", "apples"))
-# print(txt.replace("bananas", ""))           # или просто премахва
+edited = txt.replace("bananas", "apples apples apples")
+print(edited)
+print(edited.replace("apples", "", 1))     # премахва всичките или брой съвпадения
 
 "ЗАМЕНЯ ВСИЧКИ ЕЛЕМЕНТ - REGEX"
 # print(re.sub("\s", "-", txt))

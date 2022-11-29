@@ -7,6 +7,13 @@ import re
 # pattern = r"\b\d{2}\b"
 # print(re.findall(pattern, input_text))
 
+"ЗАМЕНЯ ФЛАГА В FINDALL (?i)"
+# sentence = "The waterfall was so high, that the child couldn't see its peak"
+# searched_word = "The"
+# pattern = fr'(?i)\b{searched_word}\b'       # ignorecase
+# matches = re.findall(pattern, sentence)
+# print(len(matches))
+
 
 "ВРЪЩА ИНДЕКСИ САМО НА ПЪРВИЯ МАЧ"
 # pattern = r"\b[A-Z][a-z]+ [A-Z][a-z]+\b"
@@ -27,6 +34,10 @@ import re
 # print([match.group() for match in matches])
 
 
+"result.group()"        # връща резултатите
+"result.grups()"        # връща списък с тюпъли с всички групи
+
+
 "ГРУПИ И ИЗВИКВАНЕ"     # каквото мачне на едното място, такова мачва и на другото място, а не „или“
 "РЕЧНИК OT ГРУПИ"         # връща ги именовани или като цифри
 # pattern = r"(?P<Day>\d{2})(?P<separator>[\./-])(?P<Month>[A-Z][a-z]{2})(?P=separator)(?P<Year>\d{4})"
@@ -41,6 +52,10 @@ import re
 # txt = "The rain in Spain"
 # print(re.sub("\s", "--", txt))
 
+"СПЛИТ"
+text = "=Hawai=/Cyprus/="
+split_text = re.split("\/|=", text)
+print(split_text)
 
 "POSITIVE LOOKBEHIND мачва ако има нещо конкретно преди това"
 # text = "BGN 200 RUS 2000 USD 3000"
@@ -53,13 +68,6 @@ import re
 # result = re.search('(?<!BGN)\s(\d+)', text)
 # print(result.group())
 
-
-"ЗАМЕНЯ ФЛАГА В FINDALL (?i)"
-# sentence = "The waterfall was so high, that the child couldn't see its peak"
-# searched_word = "The"
-# pattern = fr'(?i)\b{searched_word}\b'       # ignorecase
-# matches = re.findall(pattern, sentence)
-# print(len(matches))
 
 
 """ СИНТАКСИС
@@ -95,7 +103,7 @@ import re
     
     
 "ГРУПА"
-    \d{2}([/ -])[A-Z][a-z]{2}(\1)\d{4}
+    \d{2}([/ [-])[A-Z][a-z]{2}(\1)\d{4}
         13/Jul/1928, 10-Nov-1934, , 01/Jan-1951,f 25.Dec.1937 23/09/1973, 01/Feb/2016
 
 
