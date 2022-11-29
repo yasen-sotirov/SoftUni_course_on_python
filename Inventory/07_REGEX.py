@@ -17,9 +17,7 @@ import re
 
 
 
-"FINDITER - ползва се когато имаме скоби в регекса"
-
-
+"FINDITER - при групи в регекса"
 # pattern = r"(\+359 2 \d{3} \d{4})\b|(\+359-2-\d{3}-\d{4}\b)"
 # text = "+359/2/222/2222, +359-2 222 2222 +359 2 222 2222 +359-2-222-2222 +359 2-222-2222"
 # matches = re.finditer(pattern, text)
@@ -27,8 +25,6 @@ import re
 #     print(match.group())
 
 # print([match.group() for match in matches])
-
-
 
 
 "ГРУПИ И ИЗВИКВАНЕ"     # каквото мачне на едното място, такова мачва и на другото място, а не „или“
@@ -46,11 +42,11 @@ import re
 # print(re.sub("\s", "--", txt))
 
 
-
 "POSITIVE LOOKBEHIND мачва ако има нещо конкретно преди това"
 # text = "BGN 200 RUS 2000 USD 3000"
 # result = re.search('(?<=RUS)\s(\d+)', text)
 # print(result.group())
+
 
 "NEGATIVE LOOKBEHIND мачва ако няма конкретно нещо преди това"
 # text = "BGN 200 RUS 2000 USD 3000"
@@ -64,7 +60,6 @@ import re
 # pattern = fr'(?i)\b{searched_word}\b'       # ignorecase
 # matches = re.findall(pattern, sentence)
 # print(len(matches))
-
 
 
 """ СИНТАКСИС
@@ -108,16 +103,14 @@ import re
     \d{2}(?P<separator>[/ -])[A-Z][a-z]{2}(\1)\d{4}
         13/Jul/1928, 10-Nov-1934, , 01/Jan-1951,f 25.Dec.1937 23/09/1973, 01/Feb/2016
 
+
 „ ? “ МОЖЕ ДА ГО ИМА ИЛИ ДА ГО НЯМА
     -?\d
         -11 22
 
-<<<<<<< HEAD:Tutorials/07_REGEX.py
 
-„ _ “ ЧИСЛА и БУКВИ
-=======
+
 ЧИСЛА, „ _ “ и БУКВИ
->>>>>>> 34e0efcc387adf08a0a441ddfda76659b724a33a:Inventory/07_REGEX.py
     \w
         PFord 555 22___ @@!#
     \W      мачва всичко освен числа, „_“ и букви
