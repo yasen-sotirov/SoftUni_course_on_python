@@ -1,8 +1,8 @@
-"REGULAR EXPRESIONS"    #https://pythex.org/
+"REGULAR EXPRESIONS"  # https://regex101.com/   https://pythex.org/
 import re
 
 
-"ВРЪЩА ЛИСТ СЪС ВСИЧКИ МАЧОВЕ"      # дава ги под ред
+"ВРЪЩА ЛИСТ СЪС ВСИЧКИ МАЧОВЕ"  # дава ги под ред   връща само групите
 # input_text = "Hello, I'm 22 yeas old and you are 26 years old, not 136."
 # pattern = r"\b\d{2}\b"
 # print(re.findall(pattern, input_text))
@@ -16,7 +16,10 @@ import re
 # print(result.group())
 
 
+
 "FINDITER - ползва се когато имаме скоби в регекса"
+
+
 # pattern = r"(\+359 2 \d{3} \d{4})\b|(\+359-2-\d{3}-\d{4}\b)"
 # text = "+359/2/222/2222, +359-2 222 2222 +359 2 222 2222 +359-2-222-2222 +359 2-222-2222"
 # matches = re.finditer(pattern, text)
@@ -38,21 +41,47 @@ import re
 #     print(f"Day: {current_date['Day']}, Month:  {current_date['Month']}, Year:  {current_date['Year']}")
 
 
+"СМЕНЯ ЕЛЕМЕНТИ В СТРИНГА"
+# txt = "The rain in Spain"
+# print(re.sub("\s", "--", txt))
+
+
+
+"POSITIVE LOOKBEHIND мачва ако има нещо конкретно преди това"
+# text = "BGN 200 RUS 2000 USD 3000"
+# result = re.search('(?<=RUS)\s(\d+)', text)
+# print(result.group())
+
+"NEGATIVE LOOKBEHIND мачва ако няма конкретно нещо преди това"
+# text = "BGN 200 RUS 2000 USD 3000"
+# result = re.search('(?<!BGN)\s(\d+)', text)
+# print(result.group())
+
+
+"ЗАМЕНЯ ФЛАГА В FINDALL (?i)"
+# sentence = "The waterfall was so high, that the child couldn't see its peak"
+# searched_word = "The"
+# pattern = fr'(?i)\b{searched_word}\b'       # ignorecase
+# matches = re.findall(pattern, sentence)
+# print(len(matches))
+
+
+
 """ СИНТАКСИС
 
 МАЧВА ЧИСЛА, ЦИФРИ
     \d      мачва цифрите
-    \d+     мачва числата
+    \d+     мачва ена цифра или всичките последващи
         01q23wt4hh5ABCD
 
 
 МАЧВА ВСИЧКО БЕЗ ЧИСЛА
     \D      мачва поединични
-    \D+     мачва на низове
+    \D+     мачва на низове - първата и последващите
         012345ABCD
     
     
-ОКАЗВА НАЧАЛОТО И/ИЛИ КРАЯ НА СЕЛЕКЦИЯТА
+ОКАЗВА НАЧАЛОТО И/ИЛИ КРАЯ НА МАЧА
     \b      
         F[a-z]{3}\b
     \bFord\b
@@ -83,15 +112,19 @@ import re
     -?\d
         -11 22
 
+<<<<<<< HEAD:Tutorials/07_REGEX.py
 
 „ _ “ ЧИСЛА и БУКВИ
+=======
+ЧИСЛА, „ _ “ и БУКВИ
+>>>>>>> 34e0efcc387adf08a0a441ddfda76659b724a33a:Inventory/07_REGEX.py
     \w
         PFord 555 22___ @@!#
     \W      мачва всичко освен числа, „_“ и букви
 
 
-„ + “  СПЕЦИАЛЕН СИМВОЛ - ТРЯБВА ДА СЕ ESCAPE-не
-    \+
+„ + “  МАЧВА ЕДИН ИЛИ ПОВЕЧЕ СИМВОЛИ ПОСТАВЕН СЛЕД \d, \b ....
+    \+           когато се търси точно + трябва да се ескейпе
         +359
 
 
@@ -101,7 +134,7 @@ import re
         TEL: +359123456 0888123456
 
 
-„ * “  СИМВОЛЪТ КЪМ КОЙТО Е ПРИКРЕПЕНА МОЖЕ ДА ГО ИМА ИЛИ ДА ГО НЯМА
+„ * “  МАЧВА 0 ИЛИ ПОВЕЧЕ СИМВОЛИ, когато е поставена след нещо
     asd\d
     asd\d*
         weerasd5addhh76
@@ -113,18 +146,27 @@ import re
         abvgz wertx waxing
     
     
-„ ^ “  МАЧВА, АКО РЕДА ЗАПОЧВА С ВАЛИДЕН REGEX
-    ^Ford
+„ ^ “ МАЧВА AKO АБЗАЦА ЗАПОЧВА С ВАЛИДЕН РЕГЕКС
+    ^Ford       всичко без Ford
         Ford Ford Ford5 PFord
         Ford Ford Ford5 PFord
+        
+        
+„ ^[]“ МАЧВА ВСИЧКО БЕЗ НЕЩОТО в []
         
         
 „ $ “ МАЧВА АКО РЕДА ЗАВЪРШВА С ВАЛИДЕН REGEX
     Ford$
         Ford Ford Ford5 PFord  Ford5 Ford
         Ford Ford Ford5 PFord  Ford5 Ford
+        
+        
+„ ? “ СИМВОЛА ДЕТО ТЪРСИМ МОЖЕ ДА ГО ИМА, МОЖЕ И ДА ГО НЯМА, когато ? е поставен след нещо
+    sentence = "Bread и Ice cream"
+    pattern = r"\b([A-Za-z]+\s?[A-Za-z]+)\b"
+    print(re.findall(pattern, sentence))
 
-
+    
 „ () “  ГРУПИРА И ВРЪЩА МАЧ ГРУПА
     (+359|0)\d+
         +359886123456    0886123456
@@ -135,7 +177,7 @@ import re
         +359123456888123456
     \+359\d{9}\b     ще мачне ако завършва до числото в {}
         +359886123456888123456   +359886123456 
-        
+    \d{3,}      3 или повече числа
         
 „ [] “ МАЧВА СИМВОЛИТЕ В СКОБИТЕ
     [Ffar]
@@ -147,6 +189,6 @@ import re
         Ford fart15 21        
         
    
+   
 
 """
-
