@@ -7,6 +7,7 @@ import re
 # pattern = r"\b\d{2}\b"
 # print(re.findall(pattern, input_text))
 
+
 "ВРЪЩА ИНДЕКСИ САМО НА ПЪРВИЯ МАЧ"
 # pattern = r"\b[A-Z][a-z]+ [A-Z][a-z]+\b"
 # text = "peter smith, Peter Smith, Peter Smith, Peter smith, peter Smith, PEter Smith, Peter SmIth, Lily Everett"
@@ -15,14 +16,26 @@ import re
 # print(result.group())
 
 
-"FINDITER"
-pattern = r"(\+359 2 \d{3} \d{4})\b|(\+359-2-\d{3}-\d{4}\b)"
+"FINDITER - ползва се когато имаме скоби в регекса"
+# pattern = r"(\+359 2 \d{3} \d{4})\b|(\+359-2-\d{3}-\d{4}\b)"
 # text = "+359/2/222/2222, +359-2 222 2222 +359 2 222 2222 +359-2-222-2222 +359 2-222-2222"
 # matches = re.finditer(pattern, text)
 # for match in matches:
 #     print(match.group())
 
 # print([match.group() for match in matches])
+
+
+
+
+"ГРУПИ И ИЗВИКВАНЕ"     # каквото мачне на едното място, такова мачва и на другото място, а не „или“
+"РЕЧНИК OT ГРУПИ"         # връща ги именовани или като цифри
+# pattern = r"(?P<Day>\d{2})(?P<separator>[\./-])(?P<Month>[A-Z][a-z]{2})(?P=separator)(?P<Year>\d{4})"
+# text = "13/Jul/1928, 10-Nov-1934, , 01/Jan-1951,f 25.Dec.1937 23/09/1973, 1/Feb/2016"
+# valid_dates = re.finditer(pattern, text)
+# for date in valid_dates:
+#     current_date = date.groupdict()
+#     print(f"Day: {current_date['Day']}, Month:  {current_date['Month']}, Year:  {current_date['Year']}")
 
 
 """ СИНТАКСИС
@@ -66,8 +79,12 @@ pattern = r"(\+359 2 \d{3} \d{4})\b|(\+359-2-\d{3}-\d{4}\b)"
     \d{2}(?P<separator>[/ -])[A-Z][a-z]{2}(\1)\d{4}
         13/Jul/1928, 10-Nov-1934, , 01/Jan-1951,f 25.Dec.1937 23/09/1973, 01/Feb/2016
 
+„ ? “ МОЖЕ ДА ГО ИМА ИЛИ ДА ГО НЯМА
+    -?\d
+        -11 22
 
-„ _ “, ЧИСЛА и БУКВИ
+
+„ _ “ ЧИСЛА и БУКВИ
     \w
         PFord 555 22___ @@!#
     \W      мачва всичко освен числа, „_“ и букви
