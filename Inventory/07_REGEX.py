@@ -53,9 +53,9 @@ import re
 # print(re.sub("\s", "--", txt))
 
 "СПЛИТ"
-text = "=Hawai=/Cyprus/="
-split_text = re.split("\/|=", text)
-print(split_text)
+# text = "=Hawai=/Cyprus/="
+# split_text = re.split("\/|=", text)
+# print(split_text)
 
 "POSITIVE LOOKBEHIND мачва ако има нещо конкретно преди това"
 # text = "BGN 200 RUS 2000 USD 3000"
