@@ -11,8 +11,8 @@ import re
 # sentence = "The waterfall was so high, that the child couldn't see its peak"
 # searched_word = "The"
 # pattern = fr'(?i)\b{searched_word}\b'       # ignorecase
-# matches = re.findall(pattern, sentence)
-# print(len(matches))
+# results = re.findall(pattern, sentence)
+# print(len(results))
 
 
 "ВРЪЩА ИНДЕКСИ САМО НА ПЪРВИЯ МАЧ"
@@ -23,19 +23,23 @@ import re
 # print(result.group())
 
 
+"ВРЪЩА САМО ПЪРВИЯ МАЧ"
+text = "AAaaaa aaa AaAAA"
+print(re.match("[A]", text))
+
 
 "FINDITER - при групи в регекса"
 # pattern = r"(\+359 2 \d{3} \d{4})\b|(\+359-2-\d{3}-\d{4}\b)"
 # text = "+359/2/222/2222, +359-2 222 2222 +359 2 222 2222 +359-2-222-2222 +359 2-222-2222"
-# matches = re.finditer(pattern, text)
-# for match in matches:
-#     print(match.group())
-
-# print([match.group() for match in matches])
+# results = re.finditer(pattern, text)
+# for x in results:
+#     print(x.group())
+#
+# print([x.group() for x in results])
 
 
 "result.group()"        # връща резултатите
-"result.grups()"        # връща списък с тюпъли с всички групи
+"result.groups()"       # връща списък с тюпъли с всички групи
 
 
 "ГРУПИ И ИЗВИКВАНЕ"     # каквото мачне на едното място, такова мачва и на другото място, а не „или“
