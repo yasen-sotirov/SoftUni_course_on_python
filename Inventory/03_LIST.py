@@ -32,13 +32,17 @@ letters_list = ["cat", "dog", "mouse", "hello", 'world']
 # print(number_list)
 
 
-"ОБЕДИНЯВА ЛИСТА В STRING"
-# print('-'.join(letters_list))      # винаги връща лист
+"ОБЕДИНЯВА ЛИСТА В STRING"          # работи ако му подадеш стрингове
+# print('-'.join(letters_list))       # винаги връща лист
 # print(' '.join(letters_list))       # при "" все едно конкатенираме текста
-# print('\n'.join(letters_list))       # печати всеки елемент на нов ред
+# print('\n'.join(letters_list))      # печати всеки елемент на нов ред
+
+"РАЗОПАКОВА ЛИСТА - приложимо само в print()"
+# print(*number_list)
+# print(*number_list, sep=", ")
 
 
-"ПРОЧИТА ЛИСТА ОТ ИНДЕКС ДО ИНДЕКС СЪС СТЪПКА"      # като слайснг-а на стринг
+"sliceing - ПРОЧИТА ЛИСТА ОТ ИНДЕКС ДО ИНДЕКС СЪС СТЪПКА"      # като слайснг-а на стринг
 # edited = mix_list[2:5:2]
 # print(edited)
 # print(mix_list[4])
@@ -62,13 +66,19 @@ letters_list = ["cat", "dog", "mouse", "hello", 'world']
 # print(char)
 
 
+"ИЗВЕЖДА ЕЛЕМЕНТ ОТ ЛИСТА"      # броя на променливите трябва да отговаря на дължината на листа
+# num_1, num_2, num_3, num_4, num_5 = number_list_3
+# print(num_1)
+# print(num_5)
+
+
 "ПРЕМАХВА ЕЛЕМЕНТ/И В ЛИСТА (от ляво на дясно) "
 # mix_list.remove(2)      # ако елемента го няма връща грешка
 # print(mix_list)
 
-# while 2 in mix_list:
-#     mix_list.remove(2)
-# print(mix_list)
+# while "dog" in letters_list:
+#     letters_list.remove("dog")
+# print(letters_list)
 
 
 "ТРИЕ ЕЛЕМЕНТ ПО ИНДЕКС"
@@ -79,15 +89,6 @@ letters_list = ["cat", "dog", "mouse", "hello", 'world']
 "СУМИРА ЛИСТА"
 # print(sum(number_list))
 # print("{:.2f}".format(sum(number_list)))
-
-
-"РАЗДЕЛЯ ЧИСЛАТА В ЛИСТА - разопакова"
-# print(*number_list)             # „ * “ разопакова листа
-# print(*number_list, sep="_")    # разопакова листа и слага сепаратор между елементите
-
-# num_1, num_2, num_3, num_4, num_5 = number_list_3
-# print(num_1)
-# print(num_4)
 
 
 "ВМЪКВА (нещо) ПО ИНДЕКС"
@@ -108,7 +109,6 @@ letters_list = ["cat", "dog", "mouse", "hello", 'world']
 
 "БРОЙ КОЛКО (неща) ИМА В ЛИСТА"
 # print(mix_list.count('b'))
-
 
 
 "ДАВА ИНДЕКС И ЕЛЕМЕНТА, КОЙТО Е ТАМ"
@@ -140,7 +140,7 @@ letters_list = ["cat", "dog", "mouse", "hello", 'world']
 # letters_list.sort(reverse=True) # обръщане на реда
 
 
-"ПОДРЕЖДА ПО КЛЮЧ - прави нов списък"
+"СОРТИРА ПО КЛЮЧ - прави нов списък"
 # print(sorted(letters_list))     # или в принта
 # print(sorted([5, 1, 6, 3, 8, 4, 2, 7]))
 
@@ -169,7 +169,7 @@ letters_list = ["cat", "dog", "mouse", "hello", 'world']
 #     print(mix_list[index], end=', ')
 
 
-"ПРЕМАХВА ПОВТАРЯЩИТЕ СЕ ЕЛЕМЕНТИ ОТ ЛИСТА - SET" # RAZBYRKVA ELEMENTITE
+"ПРЕМАХВА ПОВТАРЯЩИТЕ СЕ ЕЛЕМЕНТИ ОТ ЛИСТА - SET"   # разбърква елементите
 # print(list(set(mix_list)))
 
 
@@ -230,3 +230,5 @@ letters_list = ["cat", "dog", "mouse", "hello", 'world']
 # boolean = 5 in number_list_3
 # print(boolean)
 # print(6 in number_list_3)
+
+

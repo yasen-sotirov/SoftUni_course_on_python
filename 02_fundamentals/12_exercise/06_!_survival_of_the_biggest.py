@@ -7,7 +7,6 @@ You should remove the smallest ones, and then, you should print all the numbers 
 list_of_numbers = input().split()
 number = int(input())
 edited_list = []
-list_as_str = ''
 
 for current_num in list_of_numbers:
     num_as_digit = int(current_num)
@@ -16,10 +15,6 @@ for current_num in list_of_numbers:
 for _ in range(number):
     edited_list.remove(min(edited_list))
 
-for element in edited_list:
-    new_element = str(element)
-    list_as_str += new_element
+print(*edited_list, sep=', ')
 
-list_as_str = list_as_str[-1]
 
-print(list_as_str)

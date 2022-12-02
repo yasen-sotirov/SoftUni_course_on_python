@@ -5,3 +5,4 @@ text = input()
 
 valid_names = re.findall(pattern, text)
 print(*valid_names)
+

@@ -1,34 +1,21 @@
-"REGULAR EXPRESIONS"  # https://regex101.com/   https://pythex.org/
+"REGULAR EXPRESIONS"     #
 import re
 
+# https://regex101.com
+# https://pythex.org
+# https://www.w3schools.com/python/python_regex.asp
 
-"ВРЪЩА ЛИСТ СЪС ВСИЧКИ МАЧОВЕ"  # дава ги под ред   връща само групите
-# input_text = "Hello, I'm 22 yeas old and you are 26 years old, not 136."
-# pattern = r"\b\d{2}\b"
-# print(re.findall(pattern, input_text))
-
-"ЗАМЕНЯ ФЛАГА В FINDALL (?i)"
-# sentence = "The waterfall was so high, that the child couldn't see its peak"
-# searched_word = "The"
-# pattern = fr'(?i)\b{searched_word}\b'       # ignorecase
-# results = re.findall(pattern, sentence)
-# print(len(results))
+# text = "Hello, I'm @22 yeas old, and you are @26 years old, not the @136. " \
+#        "The waterfall was so high, that the child couldn't see its peak"
 
 
-"ВРЪЩА ИНДЕКСИ САМО НА ПЪРВИЯ МАЧ"
-# pattern = r"\b[A-Z][a-z]+ [A-Z][a-z]+\b"
-# text = "peter smith, Peter Smith, Peter Smith, Peter smith, peter Smith, PEter Smith, Peter SmIth, Lily Everett"
-# result = re.search(pattern, text)
-# print(result.start(), result.end())
-# print(result.group())
+
+"re.findall - ВРЪЩА ЛИСТ СЪС ВСИЧКИ СЪВППАДЕНИЯ"
+# text = "@22, 154, 235, 33"
+# print(re.findall("\d{2}", text))
 
 
-"ВРЪЩА САМО ПЪРВИЯ МАЧ"
-text = "AAaaaa aaa AaAAA"
-print(re.match("[A]", text))
-
-
-"FINDITER - при групи в регекса"
+"re.finditer - при групи в регекса"
 # pattern = r"(\+359 2 \d{3} \d{4})\b|(\+359-2-\d{3}-\d{4}\b)"
 # text = "+359/2/222/2222, +359-2 222 2222 +359 2 222 2222 +359-2-222-2222 +359 2-222-2222"
 # results = re.finditer(pattern, text)
@@ -38,7 +25,45 @@ print(re.match("[A]", text))
 # print([x.group() for x in results])
 
 
-"result.group()"        # връща резултатите
+
+"ЗАМЕНЯ ФЛАГА В FINDALL (?i)"
+# searched_word = "The"
+# pattern = fr'(?i)\b{searched_word}\b'       # ignorecase
+# print(re.findall(pattern, text))
+
+
+
+"re.search - ВРЪЩА ПЪРВИЯ МАЧ ОТ ТЕКСТ С МНОГО РЕДОВЕ"
+# text = "peter smith, peter Smith, peter Smith, " \
+#        "PEter Smith, Ivan Peshov, Lily Everett"
+# result = re.search(r"\b[A-Z][a-z]+ [A-Z][a-z]+\b", text)
+# print(result.group())
+
+
+"re.match - ВРЪЩА АКО ИМА МАЧ В НАЧАЛОТО НА ПЪРВИЯ РЕД ОТ ТЕКСТА"
+# pattern = r"\b[A-Z][a-z]+ [A-Z][a-z]+\b"
+# text = "Peter Smith, peter Smith, " \
+#        "PEter Smith, Peter SmIth, Lily Everett"
+# print(re.match(pattern, text))
+# result = re.match(pattern, text)
+# print(result.group())
+
+
+
+"result.start(), result.end() - ВРЪЩА НАЧАЛЕН И КРАЕН ИНДЕКС НА ОБЕКТА ОТ МАЧА"
+# text = "peter smith, Peter Smith, Lilly"
+# result = re.search(r"\b[A-Z][a-z]+ [A-Z][a-z]+\b", text)
+# print(result.start(), result.end())
+
+
+"f string ФОРМАТИРАНЕ В REGEX"
+# searched_word = "the"
+# pattern = fr'{searched_word}'
+# print(re.findall(pattern, text))
+
+
+
+"result.group()"        # връща резултатите от обект
 "result.groups()"       # връща списък с тюпъли с всички групи
 
 
@@ -56,10 +81,11 @@ print(re.match("[A]", text))
 # txt = "The rain in Spain"
 # print(re.sub("\s", "--", txt))
 
-"СПЛИТ"
-# text = "=Hawai=/Cyprus/="
-# split_text = re.split("\/|=", text)
-# print(split_text)
+"СПЛИТ"                 # връща списък на всички елементи
+# text = "The rain in Spain"
+# print(re.split("\s", text))
+# print(re.split("\s", text, 1))      # разделя замо при първото съвпадение
+
 
 "POSITIVE LOOKBEHIND мачва ако има нещо конкретно преди това"
 # text = "BGN 200 RUS 2000 USD 3000"
@@ -71,6 +97,13 @@ print(re.match("[A]", text))
 # text = "BGN 200 RUS 2000 USD 3000"
 # result = re.search('(?<!BGN)\s(\d+)', text)
 # print(result.group())
+
+
+
+"ОКАЗВА НАЧАЛОТО И/ИЛИ КРАЯ НА МАЧА"
+# text = "The rain in Spain"
+# print(re.findall("in", text))
+# print(re.findall("\bin", text))         # не знам защо не работи
 
 
 
@@ -88,13 +121,7 @@ print(re.match("[A]", text))
         012345ABCD
     
     
-ОКАЗВА НАЧАЛОТО И/ИЛИ КРАЯ НА МАЧА
-    \b      
-        F[a-z]{3}\b
-    \bFord\b
-        Ford Ford5 PFord
-    \+359\d{9}\b     ще мачне ако завършва до числото в {}
-        +359886123456888123456   +359886123456 
+
 
 
 МАЧВА SPACES-а      може и само чрез спейс

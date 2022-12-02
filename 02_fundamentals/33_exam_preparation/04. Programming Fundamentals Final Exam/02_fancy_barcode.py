@@ -29,6 +29,22 @@ If the barcode is invalid:
 If the barcode is valid:
 •	"Product group: {product group}"
 """
+import re
 
 
 number_of_barcode = int(input())
+
+for _ in range(number_of_barcode):
+    barcode = input()
+    pattern = r"@#+[A-Z][A-Za-z0-9]{4,}[A-Z]@#+"
+    result = re.findall(pattern, barcode)
+    result_as_str = ' '.join(result)
+    if result:
+        pattern = r'\d'
+        extract_nums = re.findall(pattern, result)
+        if not extract_nums:
+            print('Product group: 00')
+        else:
+            print(f'Product group: {"".join(extract_nums)}')
+    else:
+        print("Invalid barcode")
