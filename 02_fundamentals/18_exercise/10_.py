@@ -16,3 +16,27 @@ Constrains
 """
 
 # https://github.com/ceo-py/softuni/blob/main/Python-Fundamentals/Lists%20Advanced%20-%20Exercise/13_pokemon_dont_go.py
+
+
+
+data = input().split()
+list_of_pokemons = [int(num) for num in data]
+sum_of_removed = 0
+
+while len(list_of_pokemons) > 0:
+    index = int(input())
+
+    if index < 0:
+        list_of_pokemons[0] = list_of_pokemons[-1]
+    elif index > len(list_of_pokemons) -1:
+        list_of_pokemons[-1] = list_of_pokemons[0]
+    else:
+        del list_of_pokemons[index]
+        sum_of_removed += list_of_pokemons[index]
+        for element in list_of_pokemons:
+            if element <= index:
+                element += index
+            else:
+                element -= index
+
+print(sum_of_removed)

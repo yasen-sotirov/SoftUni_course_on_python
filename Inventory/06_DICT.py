@@ -19,7 +19,7 @@ names_ages = {"Ines": 27,
 # my_dict["eyes color"] = "green"
 # print(my_dict)
 
-# names = classes["1A"]             # дава ни достъп до листа и вече работим с него
+# names = classes["1A"]             # дава ни достъп до вложения лист
 # names.append("appended name")     # както обикновен лист
 # print(classes)
 
@@ -78,8 +78,9 @@ names_ages = {"Ines": 27,
 # my_dict.popitem()       # премахва последната двойка
 # print(my_dict)
 
-# del my_dict['a']
-# print(my_dict)
+print(my_dict)
+del my_dict['a']
+print(my_dict)
 
 # dictionary = my_dict
 # del dictionary          # трие цялата променлива

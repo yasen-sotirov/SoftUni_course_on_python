@@ -82,6 +82,7 @@ letters_list = ["cat", "dog", "mouse", "hello", 'world']
 
 
 "ТРИЕ ЕЛЕМЕНТ ПО ИНДЕКС"
+# print(mix_list)
 # del mix_list[1]
 # print(mix_list)
 
