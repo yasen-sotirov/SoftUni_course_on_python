@@ -32,7 +32,7 @@ letters_list = ["cat", "dog", "mouse", "hello", 'world']
 # print(number_list)
 
 
-"ОБЕДИНЯВА ЛИСТА В STRING"          # работи ако му подадеш стрингове
+"ОБЕДИНЯВА ЛИСТА В STRING"            # само със стрингове
 # print('-'.join(letters_list))       # винаги връща лист
 # print(' '.join(letters_list))       # при "" все едно конкатенираме текста
 # print('\n'.join(letters_list))      # печати всеки елемент на нов ред

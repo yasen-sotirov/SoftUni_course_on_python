@@ -34,10 +34,13 @@ import re
 
 
 "re.search - ВРЪЩА ПЪРВИЯ МАЧ ОТ ТЕКСТ С МНОГО РЕДОВЕ"
-# text = "peter smith, peter Smith, peter Smith, " \
-#        "PEter Smith, Ivan Peshov, Lily Everett"
-# result = re.search(r"\b[A-Z][a-z]+ [A-Z][a-z]+\b", text)
-# print(result.group())
+text = "peter smith, peter Smith, peter Smith, " \
+       "PEter Smith, Ivan Peshov, Lily Everett"
+result = re.search(r"\b[A-Z][a-z]+ [A-Z][a-z]+\b", text)
+result = result.group()
+print(result)
+print(type(result))
+
 
 
 "re.match - ВРЪЩА АКО ИМА МАЧ В НАЧАЛОТО НА ПЪРВИЯ РЕД ОТ ТЕКСТА"
@@ -80,6 +83,7 @@ import re
 "СМЕНЯ ЕЛЕМЕНТИ В СТРИНГА"
 # txt = "The rain in Spain"
 # print(re.sub("\s", "--", txt))
+
 
 "СПЛИТ"                 # връща списък на всички елементи
 # text = "The rain in Spain"

@@ -78,9 +78,9 @@ names_ages = {"Ines": 27,
 # my_dict.popitem()       # премахва последната двойка
 # print(my_dict)
 
-print(my_dict)
-del my_dict['a']
-print(my_dict)
+# print(my_dict)
+# del my_dict['a']
+# print(my_dict)
 
 # dictionary = my_dict
 # del dictionary          # трие цялата променлива

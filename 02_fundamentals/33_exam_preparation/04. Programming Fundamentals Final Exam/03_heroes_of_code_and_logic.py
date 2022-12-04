@@ -41,9 +41,8 @@ while True:
     elif "Recharge" in command:
         hero_name = command[1]
         amount = int(command[2])
-        if dict_of_heroes[hero_name]
+        if dict_of_heroes[hero_name]:
             pass
-
 
     elif "Heal" in command:
         pass

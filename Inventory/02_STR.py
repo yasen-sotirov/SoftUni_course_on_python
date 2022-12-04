@@ -25,9 +25,9 @@ txt_6 = "123 abc"
 
 
 "ЗАМЕНЯ ЕЛЕМЕНТ"
-# edited = txt.replace("bananas", "apples apples apples")
-# print(edited)
-# print(edited.replace("apples", "", 1))     # премахва всичките или брой съвпадения
+edited = txt.replace("bananas", "apples apples apples")
+print(edited)
+print(edited.replace("apples", "", 1))     # премахва всичките или брой съвпадения
 
 
 "ЗАМЕНЯ ВСИЧКИ ЕЛЕМЕНТ - REGEX"
@@ -52,7 +52,7 @@ txt_6 = "123 abc"
 # print(f'Буквата е: {chr(100)}')
 
 
-"СЛАЙСИНГ"              # работи и за лист
+"СЛАЙСИНГ"                # работи и за лист
 # print(txt[2])           # показва кой символ е на индекс
 # print(txt[1:9:2])       # показва символи от индекс до индекс със стъпка
 
