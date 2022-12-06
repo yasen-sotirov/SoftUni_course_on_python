@@ -14,11 +14,14 @@ First, you will receive a string, and afterward, until the command "Done" is giv
 •	"Substitute {substring} {substitute}"
     - If the raw password contains the given substring, replaces all of its occurrences with the substitute text given and prints the result.
     - If it doesn't, prints "Nothing to replace!".
+
 Input
 •	You will be receiving strings until the "Done" command is given.
+
 Output
 •	After the "Done" command is received, print:
     - "Your password is: {password}"
+
 Constraints
 •	The indexes from the "Cut {index} {length}" command will always be valid.
 """
