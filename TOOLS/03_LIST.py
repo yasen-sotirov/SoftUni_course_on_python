@@ -37,9 +37,14 @@ letters_list = ["cat", "dog", "mouse", "hello", 'world']
 # print(' '.join(letters_list))       # при "" все едно конкатенираме текста
 # print('\n'.join(letters_list))      # печати всеки елемент на нов ред
 
-"РАЗОПАКОВА ЛИСТА - приложимо само в print()"
+"РАЗОПАКОВА ЛИСТА"
 # print(*number_list)
 # print(*number_list, sep=", ")
+
+# commands = "bg:sofia:varna:burgas"
+# commands, *data = commands.split(":")
+# print(commands)
+# print(data)
 
 
 "sliceing - ПРОЧИТА ЛИСТА ОТ ИНДЕКС ДО ИНДЕКС СЪС СТЪПКА"      # като слайснг-а на стринг
