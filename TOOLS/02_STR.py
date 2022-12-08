@@ -25,9 +25,9 @@ txt_6 = "123 abc"
 
 
 "ЗАМЕНЯ ЕЛЕМЕНТ"
-edited = txt.replace("bananas", "apples apples apples")
-print(edited)
-print(edited.replace("apples", "", 1))     # премахва всичките или брой съвпадения
+# edited = txt.replace("bananas", "apples apples apples")
+# print(edited)
+# print(edited.replace("apples", "", 1))     # премахва всичките или брой съвпадения
 
 
 "ЗАМЕНЯ ВСИЧКИ ЕЛЕМЕНТ - REGEX"
@@ -35,8 +35,9 @@ print(edited.replace("apples", "", 1))     # премахва всичките �
 
 
 "ПРЕМАХВА ЕЛЕМЕНТ ОТ НАЧАЛОТО И КРАЯ НА ТЕКСТА"
-# print(txt.strip("-!"))
-# print(txt.strip())
+print(txt)
+print(txt.strip("-!"))
+print(txt.strip())
 
 
 "ДОБАВЯ ЕЛЕМЕНТ ОТ НАЧАЛОТО И КРАЯ НА ТЕКСТА"

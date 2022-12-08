@@ -1,4 +1,5 @@
 """ 01. World Tour
+    SoftUni judge system at https://judge.softuni.org/Contests/Practice/Index/2518#0.
     On the first line, you will be given a string containing all of your stops.
 Until you receive the command "Travel", you will be given some commands to manipulate
 that initial string. The commands can be:
@@ -42,8 +43,6 @@ Hawai::Rome-Greece
 Bulgaria::Rome-Greece
 Ready for world tour! Planned stops: Bulgaria::Rome-Greece
 """
-
-
 
 
 # def add_stop(data, stops):
@@ -97,8 +96,7 @@ while True:
         break
 
     elif "Add Stop" in command:
-        index = int(command[1])
-        string = command[2]
+        index, string = int(command[1]), command[2]
         if 0 <= index < len(list_of_stops):
             list_of_stops = list_of_stops[:index] + string + list_of_stops[index:]
             print(list_of_stops)
@@ -110,8 +108,7 @@ while True:
             print(list_of_stops)
 
     elif "Switch" in command:
-        old_string = command[1]
-        new_string = command[2]
+        old_string, new_string = command[1], command[2]
         if old_string in list_of_stops:
             list_of_stops = list_of_stops.replace(old_string, new_string)
             print(list_of_stops)
