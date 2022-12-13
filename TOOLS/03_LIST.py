@@ -14,10 +14,13 @@ letters_list = ["cat", "dog", "mouse", "hello", 'world']
 # mix_list.append(-int(2) * 2)
 # print(mix_list)
 
+
 "ДОБАВЯ КЪМ СЪЩ ЕЛЕМЕНТИ В ЛИСТА"
+# print(number_list)
 # number_list[0] += 100
 # print(number_list)
 
+# print(letters_list)
 # letters_list[0] += '_MO'
 # print(letters_list)
 
@@ -36,6 +39,7 @@ letters_list = ["cat", "dog", "mouse", "hello", 'world']
 # print('-'.join(letters_list))       # винаги връща лист
 # print(' '.join(letters_list))       # при "" все едно конкатенираме текста
 # print('\n'.join(letters_list))      # печати всеки елемент на нов ред
+
 
 "РАЗОПАКОВА ЛИСТА"
 # print(*number_list)
@@ -78,6 +82,7 @@ letters_list = ["cat", "dog", "mouse", "hello", 'world']
 
 
 "ПРЕМАХВА ЕЛЕМЕНТ/И В ЛИСТА (от ляво на дясно) "
+# print(mix_list)
 # mix_list.remove(2)      # ако елемента го няма връща грешка
 # print(mix_list)
 
