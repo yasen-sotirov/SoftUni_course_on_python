@@ -79,15 +79,18 @@ for current_room in rooms:
     action, points = current_room.split()
     points = int(points)
     best_room += 1
+
     if action == "potion":
         if health + points < 100:
             health += points
             print(f"You healed for {points} hp.")
             print(f"Current health: {health} hp.")
-        else:
+
+        elif health + points >= 100:
+            difference = 100 - health
             health = 100
-            print(f"You healed for {100 - points} hp.")
-            print(f"Current health: {health} hp.")
+            print(f"You healed for {difference} hp.")
+            print(f"Current health: 100 hp.")
 
     elif action == "chest":
         bitcoins += points
@@ -105,6 +108,6 @@ for current_room in rooms:
             print(f"You slayed {last_monster}.")
 
 if is_alive:
-    print(f"You've made it!"
-          f"Bitcoins: {bitcoins}"
-          f"Health: {health}")
+    print(f"You've made it!")
+    print(f"Bitcoins: {bitcoins}")
+    print(f"Health: {health}")

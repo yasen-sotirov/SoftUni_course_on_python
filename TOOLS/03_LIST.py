@@ -10,6 +10,7 @@ letters_list = ["cat", "dog", "mouse", "hello", 'world']
 
 
 "ДОБАВЯ НОВИ ЕЛЕМЕНТИ В ЛИСТА"
+# print(mix_list)
 # mix_list.append("new_var")
 # mix_list.append(-int(2) * 2)
 # print(mix_list)
