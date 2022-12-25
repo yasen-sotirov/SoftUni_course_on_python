@@ -107,6 +107,7 @@ while True:
             list_of_stops = list_of_stops[:start_index] + list_of_stops[end_index + 1:]
             print(list_of_stops)
 
+
     elif "Switch" in command:
         old_string, new_string = command[1], command[2]
         if old_string in list_of_stops:
