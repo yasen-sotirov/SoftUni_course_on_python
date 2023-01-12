@@ -35,9 +35,9 @@ txt_6 = "123 abc"
 
 
 "ПРЕМАХВА ЕЛЕМЕНТ ОТ НАЧАЛОТО И КРАЯ НА ТЕКСТА"
-print(txt)
-print(txt.strip("-!"))
-print(txt.strip())
+# print(txt)
+# print(txt.strip("-!"))
+# print(txt.strip())
 
 
 "ДОБАВЯ ЕЛЕМЕНТ ОТ НАЧАЛОТО И КРАЯ НА ТЕКСТА"
@@ -90,3 +90,10 @@ print(txt.strip())
 
 "ПРОВЕРЯВА ДАЛИ СА ЕДНАКВИ"
 # print(isinstance('123', str))
+
+
+"ДОБАВЯ ЕЛЕМЕНТИ ПРЕСИ И/ИИЛИ СЛЕД ТЕКСТА"      # прави общо 20 символа
+text = "EPIC"
+print(f'{text:#<20}')
+print(f'{text:_>20}')
+print(f'{text:.^20}')
