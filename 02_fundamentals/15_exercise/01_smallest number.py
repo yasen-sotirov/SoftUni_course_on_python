@@ -14,3 +14,21 @@ all_numbers = [num_1, num_2, num_3]
 
 min_number = smallest_num(all_numbers)
 print(min_number)
+
+
+# def max_num_function(nums):
+#     return max(nums)
+#
+#
+# list_nums = []
+#
+# while True:
+#     command = input()
+#     if command == 'end':
+#         break
+#     else:
+#         nums = int(command)
+#         list_nums.append(nums)
+#
+# max_num = max_num_function(list_nums)
+# print(max_num)
