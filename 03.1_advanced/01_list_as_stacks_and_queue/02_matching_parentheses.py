@@ -13,7 +13,7 @@ Output
  """
 
 
-expression = list(input())
+expression = input()
 per_stack = []
 
 for index in range(len(expression)):

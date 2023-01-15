@@ -36,13 +36,14 @@ letters_list = ["cat", "dog", "mouse", "hello", 'world']
 # print(number_list)
 
 
-"ОБЕДИНЯВА ЛИСТА В STRING"            # само със стрингове
+"ОБЕДИНЯВА ЛИСТА В STRING"            # само за str;  *number_list за int
 # print('-'.join(letters_list))       # винаги връща лист
 # print(' '.join(letters_list))       # при "" все едно конкатенираме текста
 # print('\n'.join(letters_list))      # печати всеки елемент на нов ред
 
 
-"РАЗОПАКОВА ЛИСТА"
+"РАЗОПАКОВА ЛИСТА"      # вместо " ".join(), защото той работи само с str
+# print(number_list)
 # print(*number_list)
 # print(*number_list, sep=", ")
 
