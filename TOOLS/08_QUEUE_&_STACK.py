@@ -1,6 +1,9 @@
 "QUEUES"        # опашки, линеина структура
                 # може да се използва като стек, но с .pop(), ако искаме да го въртим
                 # Doubly Linked List
+                # push - append
+                # pull - popleft
+                # peek - deque[0]
 
 from collections import deque
 
@@ -11,6 +14,9 @@ my_deque.append(3)
 my_deque.append(3)
 my_deque.append(4)
 
+#
+parentheses = deque(input())
+print(parentheses)
 
 "ПОКАЗВА ПРЕМАХНАТИЯ ЕЛЕМЕНТ"
 # print(my_deque.popleft())
@@ -64,8 +70,10 @@ my_deque.append(4)
 # print(my_deque.count(3))
 
 
-
-
+"ДОБАВЯ ЕЛЕМЕНТ В НАЧАЛОТО"
+# print(my_deque)
+# my_deque.appendleft(0)
+# print(my_deque)
 
 
 
@@ -73,6 +81,9 @@ my_deque.append(4)
 
 "STACKS"    # стек - за основа ползваме лист
             # LIFO
+            # push - append
+            # pull - pop
+            # peek - stack[-1]
 
 "PUSH = .append()"
 "RETRIEVING = .pop()"

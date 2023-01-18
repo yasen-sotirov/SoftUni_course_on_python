@@ -28,15 +28,15 @@ William
 
 from collections import deque
 
-names = input()
+name = input()
 line = deque()
 
-while not names == 'End':
-    if names == 'Paid':
+while not name == "End":
+    if name != "Paid":
+        line.append(name)
+    else:
         while line:
             print(line.popleft())
-    else:
-        line.append(names)
-    names = input()
+    name = input()
 
-print(f'{len(line)} people remaining.')
+print(f"{len(line)} people remaining.")

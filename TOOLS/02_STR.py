@@ -8,12 +8,14 @@ txt_4 = "1 2 3 4 5 6"
 txt_5 = "123abc"
 txt_6 = "123 abc"
 
+
 "ПРЕВРЪЩА STR В ЛИСТ ОТ ЧИСЛА"
 # nums = [int(el) for el in input().split(', ')]
 
+
 "РАЗДРОБЯВА СТРИНГ НА ЕЛЕМЕНТИ"     # връща лист
-# print(txt.split())                  # разделя по празно място
-# print(txt.split(" ", 1))            # разделя на първото съвпадение
+# print(txt.split())                # разделя по празно място
+# print(txt.split(" ", 1))          # разделя на първото съвпадение
 
 
 "ОТ STR ПРАВИ ЛИСТ ОТ ЧИСЛА"
@@ -28,10 +30,6 @@ txt_6 = "123 abc"
 # edited = txt.replace("bananas", "apples apples apples")
 # print(edited)
 # print(edited.replace("apples", "", 1))     # премахва всичките или брой съвпадения
-
-
-"ЗАМЕНЯ ВСИЧКИ ЕЛЕМЕНТ - REGEX"
-# print(re.sub("\s", "-", txt))
 
 
 "ПРЕМАХВА ЕЛЕМЕНТ ОТ НАЧАЛОТО И КРАЯ НА ТЕКСТА"
@@ -79,10 +77,6 @@ txt_6 = "123 abc"
 # print(txt, txt_2, sep='. . .')
 
 
-"МАЛКИ БУКВИ"
-# print(txt.lower())
-
-
 "ВСЯКА БУКВА НА НОВ РЕД"
 # for letter in txt:
 #     print(letter)
@@ -92,8 +86,8 @@ txt_6 = "123 abc"
 # print(isinstance('123', str))
 
 
-"ДОБАВЯ ЕЛЕМЕНТИ ПРЕСИ И/ИИЛИ СЛЕД ТЕКСТА"      # прави общо 20 символа
-text = "EPIC"
-print(f'{text:#<20}')
-print(f'{text:_>20}')
-print(f'{text:.^20}')
+"ДОБАВЯ ЕЛЕМЕНТИ ПРЕДИ И/ИИЛИ СЛЕД ТЕКСТА"      # прави общо 20 символа
+# text = "EPIC"
+# print(f'{text:#<20}')
+# print(f'{text:_>20}')
+# print(f'{text:.^20}')

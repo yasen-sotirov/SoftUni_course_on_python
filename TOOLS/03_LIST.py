@@ -7,7 +7,7 @@ number_list = [1, 4, 3, 8, 6, 2, 7, 6.59, 2.32]
 number_list_2 = [10, 20, 30, 40, 50, 60]
 number_list_3 = [1, 2, 3, 4, 5]
 letters_list = ["cat", "dog", "mouse", "hello", 'world']
-
+nested_list = [[1, 2, 3], [4, 5, 6]]
 
 "ДОБАВЯ НОВИ ЕЛЕМЕНТИ В ЛИСТА"
 # print(mix_list)
@@ -27,19 +27,25 @@ letters_list = ["cat", "dog", "mouse", "hello", 'world']
 
 
 "ЗАМЕНЯ СЪЩ ЕЛЕМЕНТИ В ЛИСТА"
+# print(letters_list)
 # letters_list[0] = "TOM"
 # print(letters_list)
 
 
-"ДОБАВЯ ДРУГ ЛИСТ В ЛИСТА"       #или само един string
+"ОБЕДИНЯВА ДВА ЛИСТА"       #или само един string
+# print(number_list)
 # number_list.extend(letters_list)
 # print(number_list)
+#
+# print(number_list + letters_list)
 
 
 "ОБЕДИНЯВА ЛИСТА В STRING"            # само за str;  *number_list за int
 # print('-'.join(letters_list))       # винаги връща лист
 # print(' '.join(letters_list))       # при "" все едно конкатенираме текста
 # print('\n'.join(letters_list))      # печати всеки елемент на нов ред
+
+# print(", ".join([str(x) for x in number_list]))     # ако са числа
 
 
 "РАЗОПАКОВА ЛИСТА"      # вместо " ".join(), защото той работи само с str
@@ -129,9 +135,11 @@ letters_list = ["cat", "dog", "mouse", "hello", 'world']
 #     print(index, letter)
 
 
-"КОПИРА ЛИСТА"
+"КОПИРА ЛИСТА"          # и работим върху копието, оригинала се запазва
 # second_list = mix_list.copy()
-# print(second_list)
+# second_list.append(1000)
+# print(mix_list)
+# print(f'second list: {second_list}')
 
 
 "С КАКВО ЗАПОЧВА"
@@ -167,8 +175,16 @@ letters_list = ["cat", "dog", "mouse", "hello", 'world']
 # print(mix_list)
 
 
-"ОБЕДИНЯВА ДВА ЛИСТА"
-# print(mix_list + letters_list)
+"ПРОМЕНЯ ЕЛЕМЕНТИ ВЪВ ВЛОЖЕНИЯ СПИСЪК"
+# print(nested_list)
+# nested_list[0][1] = 222
+# print(nested_list)
+
+
+"КОПИРАНЕ НА ВЛОЖЕН СПИСЪК"
+# from copy import deepcopy
+# nested_list_2 = deepcopy(nested_list)
+
 
 
 "ОБХОЖДА ЛИСТА ПО ЕЛЕМЕНТ И ПО ИНДЕКС - итерира"
@@ -184,6 +200,11 @@ letters_list = ["cat", "dog", "mouse", "hello", 'world']
 
 "ПРЕМАХВА ПОВТАРЯЩИТЕ СЕ ЕЛЕМЕНТИ ОТ ЛИСТА - SET"   # разбърква елементите
 # print(list(set(mix_list)))
+
+
+"СРЕДНА СТОЙНОСТ"
+from statistics import mean
+print(f"средна стойност на листа {mean(number_list):.2f}")
 
 
 "ФИЛТЪР - елементите, който дават True"
@@ -239,7 +260,8 @@ letters_list = ["cat", "dog", "mouse", "hello", 'world']
 # letters_list.reverse()      # метод, който обръща оригиналната колекция
 # print(letters_list)
 
-"BOOLEAN IN"
+
+"BOOLEAN IN"            # ако го има в листа връща True
 # boolean = 5 in number_list_3
 # print(boolean)
 # print(6 in number_list_3)

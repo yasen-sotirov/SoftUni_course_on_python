@@ -40,19 +40,20 @@ Output
  """
 
 
-clothes = [int(n) for n in input().split()]
-rack_space = int(input())
+clothes = [int(el) for el in input().split()]
+rack_capacity = int(input())
 
-rack_counter = 1
-current_rack_space = rack_space
+current_rack = rack_capacity
+counter = 1
 
 while clothes:
-    cloth = clothes.pop()
-
-    if current_rack_space - cloth >= 0:
-        current_rack_space -= cloth
+    current_clothe = clothes[-1]
+    if current_clothe <= current_rack:
+        clothes.pop()
+        current_rack -= current_clothe
     else:
-        rack_counter += 1
-        current_rack_space = rack_space - cloth
+        counter += 1
+        clothes.pop()
+        current_rack = rack_capacity - current_clothe
 
-print(rack_counter)
+print(counter)

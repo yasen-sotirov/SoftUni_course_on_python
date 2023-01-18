@@ -35,20 +35,22 @@ Output
 Orders complete
 """
 
-
 from collections import deque
 
-food = int(input())
-orders = deque([int(n) for n in input().split()])
+total_food = int(input())
+orders = deque([int(el) for el in input().split()])
 
 print(max(orders))
 
-for order in orders.copy():
-    if food - order >= 0:
+while orders:
+    current_order = orders[0]
+    if total_food >= current_order:
+        total_food -= current_order
         orders.popleft()
-        food -= order
     else:
-        print(f"Orders left: {' '.join([str(i) for i in orders])}")
         break
+
+if not orders:
+    print(f"Orders complete")
 else:
-    print(f'Orders complete')
+    print(f"Orders left: {' '.join([str(x) for x in orders])}")
