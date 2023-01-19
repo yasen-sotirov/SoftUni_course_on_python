@@ -119,8 +119,12 @@ names_ages = {"Ines": 27,
 
 # for _ in my_dict.values():
 #     print(_)
+
 # for key, value in classes.items():
 #     print(f"key is {key}, and value is {value}")
+
+# for x in classes.items():
+#     print(f"key is {x[0]}, and value is {x[1]}")
 
 
 "DICT COMPREHENSION"

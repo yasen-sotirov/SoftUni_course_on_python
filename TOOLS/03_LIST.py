@@ -267,3 +267,5 @@ print(f"средна стойност на листа {mean(number_list):.2f}")
 # print(6 in number_list_3)
 
 
+"ГЕНЕРИРА ЛИСТ C RANGE ОТ ЧИСЛА"
+# print(list(range(1, 10 + 1)))

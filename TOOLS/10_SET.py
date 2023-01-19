@@ -96,3 +96,7 @@ set_3 = {3, 4}
 # set_1.add(-1)
 # print(set_1)
 # print(sorted(set_1))
+
+
+"ГЕНЕРИРА SET C RANGE ОТ ЧИСЛА"
+print(set(range(1, 10 + 1)))

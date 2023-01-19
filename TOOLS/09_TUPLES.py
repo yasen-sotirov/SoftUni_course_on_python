@@ -57,3 +57,6 @@ t_3 = (1, 2, 3, 4, 5, 6, 7)
 # print(t_2)
 # print(t_2 * 8)
 
+
+"ГЕНЕРИРА TUPLE C RANGE ОТ ЧИСЛА"
+# print(tuple(range(1, 10 + 1)))
