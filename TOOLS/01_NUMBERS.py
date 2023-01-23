@@ -1,11 +1,16 @@
-"NUMBERS"    # from math import ceil, floor
+"NUMBERS"  #
 
 num_1, num_2, num_3 = 1, 2, 3
-
 
 "НАЙ-МАЛКО, НАЙ-ГОЛЯМО"
 # print(min(num_1, num_2, num_3))
 # print(max(num_1, num_2, num_3))
+
+
+"MAX/MIN SIZE"
+# import sys
+# print(sys.maxsize)
+# print(-sys.maxsize)
 
 
 "ФОРМАТИРА СТОЙНОСТТА НА ПРОМЕНЛИВА"
@@ -34,6 +39,13 @@ num_1, num_2, num_3 = 1, 2, 3
 # print(f"{num:.2%}")
 
 
+"ЗАКРЪГЛЯВА НАГОРЕ, НАДОУ"
+# from math import ceil, floor
+# number = 1.618
+# print(ceil(number))
+# print(floor(number))
+
+
 "МАП"
 # def double_num(number):
 #     if number % 2 == 0:
@@ -42,4 +54,3 @@ num_1, num_2, num_3 = 1, 2, 3
 # num_list = [1, 2, 3, 4, 5, 6, 7, 8]
 # result = map(double_num, num_list)
 # print(list(result))
-
