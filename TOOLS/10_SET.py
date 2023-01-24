@@ -99,4 +99,4 @@ set_3 = {3, 4}
 
 
 "ГЕНЕРИРА SET C RANGE ОТ ЧИСЛА"
-print(set(range(1, 10 + 1)))
+# print(set(range(1, 10 + 1)))
