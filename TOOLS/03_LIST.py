@@ -203,8 +203,8 @@ nested_list = [[1, 2, 3], [4, 5, 6]]
 
 
 "СРЕДНА СТОЙНОСТ"
-from statistics import mean
-print(f"средна стойност на листа {mean(number_list):.2f}")
+# from statistics import mean
+# print(f"средна стойност на листа {mean(number_list):.2f}")
 
 
 "ФИЛТЪР - елементите, който дават True"
@@ -253,10 +253,11 @@ print(f"средна стойност на листа {mean(number_list):.2f}")
 #     print(letters_list)
 
 
-"ОБРЪЩА ЛИСТА"     # или слайсинг result = letters_list[::-1]
-# result = reversed(letters_list)   # build-in функция, която прави нова колекция, която е обърната
-# print(list(result))
-
+"ОБРЪЩА ЛИСТА"                      # или слайсинг result = letters_list[::-1]
+# print(letters_list)
+# print(list(reversed(letters_list)))     # прави нова колекция, която е обърната
+#
+#
 # letters_list.reverse()      # метод, който обръща оригиналната колекция
 # print(letters_list)
 

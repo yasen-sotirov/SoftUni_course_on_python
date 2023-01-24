@@ -63,3 +63,4 @@ for row in range(n):
     row_element = input().split()
 
     for col in range(n):
+        pass

@@ -54,3 +54,12 @@ num_1, num_2, num_3 = 1, 2, 3
 # num_list = [1, 2, 3, 4, 5, 6, 7, 8]
 # result = map(double_num, num_list)
 # print(list(result))
+
+
+"CONTINUE"      # АКО ВЛЕЗЕ В IF ЩЕ ПРОПУСНЕ ОПЕРАЦИЯТА
+i = 0
+while i < 9:
+    i += 1
+    if i == 3:
+        continue
+    print(i)
