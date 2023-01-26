@@ -88,12 +88,16 @@ names_ages = {"Ines": 27,
 
 "СОРТИРАНЕ"
 # print(sorted(num_dict))         # принтва лист със сортирани само ключовете
-
+#
 # print(sorted(letter_dict.items(), key=lambda x: x[0]))   #за sorte с key lambda прави for-цикъл за всяко „x“ от x[0]
 # print(sorted(letter_dict.items(), key=lambda x: x[0], reverse=True))      # подрежда по value
 # print(sorted(num_dict.items(), key=lambda x: - x[1]))                     # обръща реда на int
 
-# print(sorted(names_ages.items(), key=lambda x: (x[0], - x[1])))     # сортира по два параметъра
+# print(names_ages)
+# print(sorted(names_ages.items(), key=lambda x: (x[0], x[1])))     # сортира по два параметъра
+
+students_2 = {"A": [5, 6], "C": [2, 4], "B": [4, 3, 5]}
+print(sorted(students_2.items(), key=lambda kvpt: len(kvpt[1])))
 
 
 "ВРЪЩА VALUE"       # a
