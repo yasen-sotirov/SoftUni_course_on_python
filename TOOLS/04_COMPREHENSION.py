@@ -29,3 +29,10 @@ number_list_2 = [4, 8, 2, 6, 9]
 # data = ["5", "Sofia"]
 # digit, string = [int(x) if x.isdigit() else x for x in data]
 # print(digit, string)
+
+
+"ВСИЧКИ ЛИ СА ЕДНАКВИ"              # връща дали всичк в листа са еднакви
+# # print(all(number_list_2))
+# print(all([isinstance(x, int) for x in number_list_2]))
+# print(all([isinstance(x, str) for x in letters_list]))
+# print(all([isinstance(x, str) for x in mix_list]))

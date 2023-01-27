@@ -96,8 +96,8 @@ names_ages = {"Ines": 27,
 # print(names_ages)
 # print(sorted(names_ages.items(), key=lambda x: (x[0], x[1])))     # сортира по два параметъра
 
-students_2 = {"A": [5, 6], "C": [2, 4], "B": [4, 3, 5]}
-print(sorted(students_2.items(), key=lambda kvpt: len(kvpt[1])))
+# students_2 = {"A": [5, 6], "C": [2, 4], "B": [4, 3, 5]}
+# print(sorted(students_2.items(), key=lambda kvpt: len(kvpt[1])))
 
 
 "ВРЪЩА VALUE"       # a
@@ -181,3 +181,15 @@ print(sorted(students_2.items(), key=lambda kvpt: len(kvpt[1])))
 
 "ВРЪЩА СПИСЪК С ТЮПЪЛИ"
 # print(num_dict.items())
+
+
+"ЗАМЕНЯ ЕЛЕМЕНТИ "
+# def concatenate(*args, **kwargs):
+#     main_string = ''.join(args)
+#
+#     for key, value in kwargs.items():
+#         if key in main_string:
+#             main_string = main_string.replace(key, value)
+#     return main_string
+#
+# print(concatenate("Soft", "UNI", "Is", "Grate", "!", UNI="Uni", Grate="Great"))

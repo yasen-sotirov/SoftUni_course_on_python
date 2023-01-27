@@ -14,9 +14,8 @@ my_deque.append(3)
 my_deque.append(3)
 my_deque.append(4)
 
-#
-parentheses = deque(input())
-print(parentheses)
+# parentheses = deque(input())
+# print(parentheses)
 
 "ПОКАЗВА ПРЕМАХНАТИЯ ЕЛЕМЕНТ"
 # print(my_deque.popleft())
@@ -95,3 +94,5 @@ print(parentheses)
 # print(stack)
 # stack.pop()
 # print(stack)
+
+

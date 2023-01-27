@@ -31,6 +31,15 @@ txt_6 = "123 abc"
 # print(edited)
 # print(edited.replace("apples", "", 1))     # премахва всичките или брой съвпадения
 
+# def concatenate(*args, **kwargs):
+#     main_string = ''.join(args)
+#     for key, value in kwargs.items():
+#         if key in main_string:
+#             main_string = main_string.replace(key, value)
+#     return main_string
+# print(concatenate("Soft", "UNI", "Is", "Grate", "!", UNI="Uni", Grate="Great"))
+
+
 
 "ПРЕМАХВА ЕЛЕМЕНТ ОТ НАЧАЛОТО И КРАЯ НА ТЕКСТА"
 # print(txt)
@@ -69,7 +78,7 @@ txt_6 = "123 abc"
 
 "БУКВИ ЛИ СА ИЛИ ЧИСЛА"
 # print(txt_5.isalnum())        # връща True ако има числа и/или букви в стринга: alpha_numerical
-# print(txt_4.isdigit())        # връща True ако има числа в стринга
+# print(txt_4.isdigit())        # връща True ако всички са числа в стринга
 # print(txt_6.isnumeric())      #
 
 
@@ -84,6 +93,8 @@ txt_6 = "123 abc"
 
 "ПРОВЕРЯВА ДАЛИ СА ЕДНАКВИ"
 # print(isinstance('123', str))
+# print(isinstance(123, int))
+# print(isinstance("123", int))
 
 
 "ДОБАВЯ ЕЛЕМЕНТИ ПРЕДИ И/ИИЛИ СЛЕД ТЕКСТА"      # прави общо 20 символа

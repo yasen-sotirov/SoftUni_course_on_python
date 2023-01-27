@@ -270,3 +270,12 @@ nested_list = [[1, 2, 3], [4, 5, 6]]
 
 "ГЕНЕРИРА ЛИСТ C RANGE ОТ ЧИСЛА"
 # print(list(range(1, 10 + 1)))
+
+
+"ЕДНАКВИ ЛИ СА"              # връща дали всичк в итеръбъла са еднакви
+# print(all(number_list_2))
+print(all([isinstance(x, int) for x in number_list_2]))
+print(all([isinstance(x, str) for x in letters_list]))
+print(all([isinstance(x, str) for x in mix_list]))
+
+
