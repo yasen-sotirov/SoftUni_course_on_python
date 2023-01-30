@@ -1,6 +1,7 @@
 "LISTS"         # съхранява различни типове данни на едно място
                 # референтен тип данни:  names = [1, 2, 3]  asd = names - едно и също са
                 # лист с методите  https://www.w3schools.com/python/python_ref_list.asp
+                # mutable - променлив
 
 mix_list = [1, 3, 2, "a", "b", 4, 88, 2, 2]
 number_list = [1, 4, 3, 8, 6, 2, 7, 6.59, 2.32]
@@ -109,6 +110,9 @@ nested_list = [[1, 2, 3], [4, 5, 6]]
 # print(sum(number_list))
 # print("{:.2f}".format(sum(number_list)))
 
+"УМНОЖАВАНЕ, ДЕЛЕНЕ И ДР."
+# from functools import reduce
+print()
 
 "ВМЪКВА (нещо) ПО ИНДЕКС"
 # mix_list.insert(3, "Pesho")

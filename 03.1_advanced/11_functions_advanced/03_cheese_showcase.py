@@ -14,7 +14,7 @@ Input	Output
 
 
 def sorting_cheeses(**kwargs):
-    sorted_cheese = sorted(kwargs.items(), key = lambda kvpt: (-len(kvpt[1]), kvpt[0]))
+    sorted_cheese = sorted(kwargs.items(), key=lambda kvpt: (-len(kvpt[1]), kvpt[0]))
 
     result = ""
     for name, quantities in sorted_cheese:

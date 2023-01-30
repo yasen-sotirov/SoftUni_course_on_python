@@ -72,9 +72,10 @@ names_ages = {"Ines": 27,
 
 
 "ПРЕМАХВА K-V ДВОЙКА"
+# print(my_dict)
 # my_dict.pop("b")        # премахва по ключ
 # print(my_dict)
-#
+
 # my_dict.popitem()       # премахва последната двойка
 # print(my_dict)
 
@@ -89,7 +90,7 @@ names_ages = {"Ines": 27,
 "СОРТИРАНЕ"
 # print(sorted(num_dict))         # принтва лист със сортирани само ключовете
 #
-# print(sorted(letter_dict.items(), key=lambda x: x[0]))   #за sorte с key lambda прави for-цикъл за всяко „x“ от x[0]
+# print(sorted(letter_dict.items(), key=lambda x: x[0]))   #за sorte с key, lambda прави for-цикъл за всяко „x“ от x[0]
 # print(sorted(letter_dict.items(), key=lambda x: x[0], reverse=True))      # подрежда по value
 # print(sorted(num_dict.items(), key=lambda x: - x[1]))                     # обръща реда на int
 
@@ -113,8 +114,13 @@ names_ages = {"Ines": 27,
 
 
 "ОБХОЖДАНЕ - ИТЕРИРАНЕ"
+# print(classes)
 # print(classes.keys())
+
+# print(classes)
 # print(classes.values())
+
+# print(my_dict)
 # print(my_dict.values())
 # print(my_dict.items())      # връща tupple
 
