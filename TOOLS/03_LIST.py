@@ -155,7 +155,7 @@ print()
 #     print('ok')
 
 
-"ПОДРЕЖДА ПО АЗБУЧЕН РЕД и ОБРАТЕН РЕД"
+"СОРТИРА СЪЩ. ЛИСТ"
 # letters_list.sort()
 # print(letters_list)
 
@@ -165,13 +165,13 @@ print()
 # letters_list.sort(reverse=True) # обръщане на реда
 
 
-"СОРТИРА ПО КЛЮЧ - прави нов списък"
-# print(sorted(letters_list))     # или в принта
-# print(sorted([5, 1, 6, 3, 8, 4, 2, 7]))
+"ПРАВИ НОВ ЛИСТ И СОРТИРА НЕГО"
+# print(letters_list)
+# print(sorted(letters_list))
 
-# name_list = ["Ali", 'Marry', 'Kim', 'Teddy', 'Monika', 'John']
-# sorted_list = sorted(name_list, key=lambda item: (-len(item), item))
-# print(sorted_list)
+name_list = ["Ali", 'Marry', 'Kim', 'Teddy', 'Monika', 'John']
+sorted_list = sorted(name_list, key=lambda item: (-len(item), item))
+print(sorted_list)
 
 
 "ОБРЪЩА ЛИСТА ОТЗАНД НАПРЕД"
@@ -278,8 +278,8 @@ print()
 
 "ЕДНАКВИ ЛИ СА"              # връща дали всичк в итеръбъла са еднакви
 # print(all(number_list_2))
-print(all([isinstance(x, int) for x in number_list_2]))
-print(all([isinstance(x, str) for x in letters_list]))
-print(all([isinstance(x, str) for x in mix_list]))
-
+# print(all([isinstance(x, int) for x in number_list_2]))
+# print(all([isinstance(x, str) for x in letters_list]))
+# print(all([isinstance(x, str) for x in mix_list]))
+#
 
