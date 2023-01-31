@@ -46,9 +46,6 @@ names_ages = {"Ines": 27,
 #     classes[key].append("from the loop")
 # print(classes)
 
-# for key in num_dict:
-#     num_dict[key] *= 2
-# print(num_dict)
 
 
 "ИЗВИКВАНЕ ПО ВЛОЖЕН РЕЧНИК"
