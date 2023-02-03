@@ -28,3 +28,43 @@ __main__.NameTooShort: Name must be more than 4 characters
 """
 
 
+class NameTooShortError(Exception):
+    pass
+
+
+class MustContainAtSymbolError(Exception):
+    pass
+
+
+class InvalidDomainError(Exception):
+    pass
+
+
+def is_domain_invalid(current_domain, valid_domains_list):
+    result = True
+    for el in valid_domains_list:
+        if current_domain.endswith(el):
+            result = False
+            break
+    return result
+
+
+valid_domains = ['.com', '.bg', '.net', '.org']
+while True:
+    email = input()
+    if email == "End":
+        break
+
+    if "@" not in email:
+        raise MustContainAtSymbolError("Email must contain @")
+
+    username, domain = email.split("@")
+
+    if len(username) <= 4:
+        raise NameTooShortError("Name must be more than 4 characters")
+
+    if is_domain_invalid(domain, valid_domains):
+        raise InvalidDomainError(f"Domain must be one of the following: {', '.join(valid_domains)}")
+
+    else:
+        print("Email is valid")
