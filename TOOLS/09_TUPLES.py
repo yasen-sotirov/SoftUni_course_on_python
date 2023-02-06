@@ -3,7 +3,7 @@
 t_1 = (5, 0, "Gosho", 2, 4)
 t_2 = (1,)                  # без "," питона го мисли за уравнение
 t_3 = (1, 2, 3, 4, 5, 6, 7)
-
+t_4 = (("a", 5), ("b", 3), ("c", 1))
 
 
 
@@ -60,5 +60,11 @@ t_3 = (1, 2, 3, 4, 5, 6, 7)
 
 "ГЕНЕРИРА TUPLE C RANGE ОТ ЧИСЛА"
 # print(tuple(range(1, 10 + 1)))
+
+
+"СОРТИРАНЕ"
+# sorted_result = sorted(t_4, key=lambda kvpt: kvpt[1])
+# for key, value in sorted_result:
+#     print(f"{key} - {value}")
 
 

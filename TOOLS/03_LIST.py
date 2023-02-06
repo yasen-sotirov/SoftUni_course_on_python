@@ -139,6 +139,7 @@ print()
 #     print(index, letter)
 
 
+
 "КОПИРА ЛИСТА"          # и работим върху копието, оригинала се запазва
 # second_list = mix_list.copy()
 # second_list.append(1000)

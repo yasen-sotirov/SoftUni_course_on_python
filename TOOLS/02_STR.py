@@ -44,7 +44,8 @@ txt_6 = "123 abc"
 "ПРЕМАХВА ЕЛЕМЕНТ ОТ НАЧАЛОТО И КРАЯ НА ТЕКСТА"
 # print(txt)
 # print(txt.strip("-!"))
-# print(txt.strip())
+
+# print(txt.strip())        # ще премахне празен ред
 
 
 "ДОБАВЯ ЕЛЕМЕНТ ОТ НАЧАЛОТО И КРАЯ НА ТЕКСТА"
@@ -102,3 +103,17 @@ txt_6 = "123 abc"
 # print(f'{text:#<20}')
 # print(f'{text:_>20}')
 # print(f'{text:.^20}')
+
+
+
+"ЕВАЛЮИРА СТРИНГА ДО ЧИСЛА"
+# print(eval(f"2, 4, 5"))
+
+# from functools import reduce
+# def operate(sign, *args):
+#     return reduce(lambda x, y: eval(f"{x} {sign} {y}"), args)
+# print(operate("+", 1, 2, 3))
+
+"БРОЙ ЗНАЦИТЕ"
+# from string import punctuation
+# print(len([el for el in txt if el in punctuation]))
