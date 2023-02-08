@@ -6,6 +6,10 @@ class InvalidColumnError(Exception):
     pass
 
 
+class FullColumnError():
+    pass
+
+
 def print_matrix(ma):
     # print matrix
     for el in ma:
@@ -26,6 +30,7 @@ def place_player_choice(ma, selected_column_index, player_num):
         if current_element == 0:
             ma[row_index][selected_column_index] = player_num
             return
+    # TODO column is full
 
 
 rows_count = 6
