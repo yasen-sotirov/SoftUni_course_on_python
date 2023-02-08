@@ -1,4 +1,4 @@
-# place player marker ot the spot - check if the column is full
+
 # TODO define winning conditions
 
 
@@ -6,7 +6,7 @@ class InvalidColumnError(Exception):
     pass
 
 
-class FullColumnError():
+class FullColumnError(Exception):
     pass
 
 
@@ -23,14 +23,30 @@ def validate_colum_choice(selected_column_num, max_column_index):
 
 
 def place_player_choice(ma, selected_column_index, player_num):
-    # TODO
+    # place player marker ot the spot.
+    # check if the column is full if so - trow error.
     rows_count = len(ma)
     for row_index in range(rows_count - 1, - 1, - 1):
         current_element = ma[row_index][selected_column_index]
         if current_element == 0:
             ma[row_index][selected_column_index] = player_num
-            return
-    # TODO column is full
+            return row_index, selected_column_index
+    raise FullColumnError
+
+
+def is_player_num(ma, row, col, is_player_num, current_index):    # if is out of range
+    if col < 0:
+        return False
+
+    if ma[row][col + current_index] == player_num:
+        return True
+    return False
+
+
+def is_winner(ma, row, col, slots_count=4):
+    is_right = all([ma[row][col + index] == player_num for index in range(slots_count)])
+    is_left = all([ma[row][col - index] == player_num for index in range(slots_count)])
+    a = 5
 
 
 rows_count = 6
@@ -49,7 +65,10 @@ while True:
     try:
         colum_num = int(input(f"Player {player_num}, please choose a column: ")) - 1
         validate_colum_choice(colum_num, cols_count - 1)
-        place_player_choice(matrix, colum_num, player_num)
+        row, col = place_player_choice(matrix, colum_num, player_num)
+        if is_winner(matrix, row, col, player_num):
+            break
+
         print_matrix(matrix)
         print()
 
@@ -60,6 +79,11 @@ while True:
     except ValueError:
         print(f"Please select a valid digit")
         continue        # връща ни в начало на while
+
+    except FullColumnError:
+        print(f"This column is already full! "
+              f"Please select another column number!")
+        continue
 
     player_num += 1
 
