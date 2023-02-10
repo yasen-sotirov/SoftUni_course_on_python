@@ -76,7 +76,7 @@ while True:
         validate_colum_choice(colum_num, cols_count - 1)
         row, col = place_player_choice(matrix, colum_num, player_num)
         if is_winner(matrix, row, col, player_num):
-            print(matrix)
+            print_matrix(matrix)
             print(f"The winner is player {player_num}!")
             break
 
