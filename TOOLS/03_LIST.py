@@ -131,7 +131,8 @@ print()
 
 
 "БРОЙ КОЛКО (неща) ИМА В ЛИСТА"
-# print(mix_list.count('b'))
+# print(letters_list.count('o'))
+# print(mix_list.count("b"))
 
 
 "ДАВА ИНДЕКС И ЕЛЕМЕНТА, КОЙТО Е ТАМ"
@@ -170,9 +171,9 @@ print()
 # print(letters_list)
 # print(sorted(letters_list))
 
-name_list = ["Ali", 'Marry', 'Kim', 'Teddy', 'Monika', 'John']
-sorted_list = sorted(name_list, key=lambda item: (-len(item), item))
-print(sorted_list)
+# name_list = ["Ali", 'Marry', 'Kim', 'Teddy', 'Monika', 'John']
+# sorted_list = sorted(name_list, key=lambda item: (-len(item), item))
+# print(sorted_list)
 
 
 "ОБРЪЩА ЛИСТА ОТЗАНД НАПРЕД"
