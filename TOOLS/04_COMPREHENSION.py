@@ -36,3 +36,7 @@ number_list_2 = [4, 8, 2, 6, 9]
 # print(all([isinstance(x, int) for x in number_list_2]))
 # print(all([isinstance(x, str) for x in letters_list]))
 # print(all([isinstance(x, str) for x in mix_list]))
+
+
+"САМО ЕДНО ДА Е ВЯРНО"
+print(any([True, False, False]))
