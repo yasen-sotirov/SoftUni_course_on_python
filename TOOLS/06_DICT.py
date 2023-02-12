@@ -98,6 +98,15 @@ names_ages = {"Ines": 27,
 # print(sorted(students_2.items(), key=lambda kvpt: len(kvpt[1])))
 
 
+"С ЛАМБДА"
+# a = 4
+# b = 3
+# c = 2
+# dict = {"*": lambda a, b, c: a + b - c}
+# print(dict["*"](a, b, c))
+
+
+
 "ВРЪЩА VALUE"       # a
 # print(my_dict.pop("b"))   # връща value по ключ
 # print(my_dict.popitem())    # връща последната двойка като тюпъл

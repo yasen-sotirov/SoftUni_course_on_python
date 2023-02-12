@@ -66,6 +66,11 @@
 
 # pyfiglet  -   принтира текста с арт визия от тирета и слашове
 
+player = "WER"
+result = figlet_format(f"{player} won!")
+print(result)
+
+
 # email validator       # pip install email_validator
 # import random
 # num = range(1, 100)
