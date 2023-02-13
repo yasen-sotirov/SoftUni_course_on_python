@@ -53,7 +53,7 @@ txt_6 = "123 abc"
 
 
 "БРОЙ ЕЛЕМЕНТИ В СТРИНГА"
-# print(txt.count('n'))
+print(txt.count('n'))
 
 
 "ASCII ТАБЛИЦА"
