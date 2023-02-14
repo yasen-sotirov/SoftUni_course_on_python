@@ -47,11 +47,3 @@ while True:
         print(f"Game over! Black pawn is promoted to a queen at {chr(97 + b_col)}1.")
         break
 
-
-
-
-
-
-
-
-

@@ -27,10 +27,11 @@ names_ages = {"Ines": 27,
 #     classes[key].append("from the loop")
 # print(classes)
 
-# for key in num_dict:
-#     num_dict[key] *= 2
-# print(num_dict)
-
+num_dict = {'a': 1, 'b': 2, 'c': 3}
+for key in num_dict:
+    num_dict[key] *= 2
+print(num_dict)
+{'a': 2, 'b': 4, 'c': 6}
 
 "ПРОМЯНА В РЕЧНИКА"
 # my_dict["eyes color"] = "green"
