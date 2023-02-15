@@ -42,10 +42,10 @@ txt_6 = "123 abc"
 
 
 "ПРЕМАХВА ЕЛЕМЕНТ ОТ НАЧАЛОТО И КРАЯ НА ТЕКСТА"
-# print(txt)
-# print(txt.strip("-!"))
+text_to_strip = "-I like bananas!!"
+print(text_to_strip.strip("-!"))
 
-# print(txt.strip())        # ще премахне празен ред
+    # ще премахне празен ред
 
 
 "ДОБАВЯ ЕЛЕМЕНТ ОТ НАЧАЛОТО И КРАЯ НА ТЕКСТА"
@@ -53,7 +53,7 @@ txt_6 = "123 abc"
 
 
 "БРОЙ ЕЛЕМЕНТИ В СТРИНГА"
-print(txt.count('n'))
+# print(txt.count('n'))
 
 
 "ASCII ТАБЛИЦА"

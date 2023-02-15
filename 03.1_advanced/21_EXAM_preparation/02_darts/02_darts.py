@@ -21,30 +21,44 @@ for row in range(size_matrix):
 
 
 def is_valid(board_row, board_col):
-    if row < 0 or row > size_matrix or col < 0 or col > size_matrix:
+    if board_row < 0 or board_row >= size_matrix or board_col < 0 or board_col >= size_matrix:
         return False
+    return True
 
 
-def sum_borders(board_row, board_col):
+def sum_points(board_row, board_col):
     left = int(dartboard[board_row][0])
     right = int(dartboard[board_row][size_matrix-1])
     up = int(dartboard[0][board_col])
     down = int(dartboard[size_matrix-1][board_col])
-    return sum(left, right, up, down)
+    return left + right + up + down
 
 
 while True:
     turn = deque(players_data.split(', '))
     current_player = turn.popleft()
-    row, col = (int(x) for x in input()[1:-1].split(", "))
+    coordinates = input().strip("()")
+    row, col = [int(x) for x in coordinates.split(", ")]
 
     if is_valid(row, col):
-        if dartboard[row][col] == "D":
-            pass
+        hit = dartboard[row][col]
+        players_points[current_player][1] += 1
+        current_points = sum_points(row, col)
+
+        if hit == "D":
+            players_points[current_player][0] -= current_points * 2
+        elif hit == "T":
+            players_points[current_player][0] -= current_points * 3
+        elif hit == "B":
+            print(f"{current_player} won the game with {players_points[current_player][1]} throws!")
+            break
+        else:
+            players_points[current_player][0] -= hit
     else:
         continue
 
     if players_points[current_player][0] <= 0:
+        print(f"{current_player} won the game with {players_points[current_player][1]} throws!")
         break
     else:
         turn.append(current_player)
