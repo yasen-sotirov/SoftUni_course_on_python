@@ -26,9 +26,9 @@ number_list_2 = [4, 8, 2, 6, 9]
 # print(f"{num_1}, {num_2}")
 # print(num_1, num_2)
 
-# data = ["5", "Sofia"]
-# digit, string = [int(x) if x.isdigit() else x for x in data]
-# print(digit, string)
+data = ["5", "Sofia"]
+digit = [int(x) if x.isdigit() else x for x in data]
+print(digit)
 
 
 "ВСИЧКИ ЛИ СА ЕДНАКВИ"              # връща дали всичк в листа са еднакви
@@ -39,4 +39,4 @@ number_list_2 = [4, 8, 2, 6, 9]
 
 
 "САМО ЕДНО ДА Е ВЯРНО"
-print(any([True, False, False]))
+# print(any([True, False, False]))

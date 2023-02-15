@@ -27,11 +27,11 @@ names_ages = {"Ines": 27,
 #     classes[key].append("from the loop")
 # print(classes)
 
-num_dict = {'a': 1, 'b': 2, 'c': 3}
-for key in num_dict:
-    num_dict[key] *= 2
-print(num_dict)
-{'a': 2, 'b': 4, 'c': 6}
+# num_dict = {'a': 1, 'b': 2, 'c': 3}
+# for key in num_dict:
+#     num_dict[key] *= 2
+# print(num_dict)
+# {'a': 2, 'b': 4, 'c': 6}
 
 "ПРОМЯНА В РЕЧНИКА"
 # my_dict["eyes color"] = "green"
@@ -55,10 +55,10 @@ print(num_dict)
 
 
 "ИЗВИКВАНЕ НА VALUE ПО КЛЮЧ"
-# print(my_dict["b"])       # вика ключ 2, тук индекси няма, не гарми ако индекса го няма
+print(my_dict["b"])       # вика ключ 2, тук индекси няма, не гарми ако индекса го няма
 
-# print(my_dict.get(2))
-# print(my_dict.get(3))
+print(my_dict.get(2))
+print(my_dict.get(3))
 
 
 "ВРЪЩА СПИСЪК С VALUE"
