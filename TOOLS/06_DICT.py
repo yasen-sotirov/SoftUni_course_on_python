@@ -55,10 +55,10 @@ names_ages = {"Ines": 27,
 
 
 "ИЗВИКВАНЕ НА VALUE ПО КЛЮЧ"
-print(my_dict["b"])       # вика ключ 2, тук индекси няма, не гарми ако индекса го няма
-
-print(my_dict.get(2))
-print(my_dict.get(3))
+# print(my_dict["b"])       # вика ключ 2, тук индекси няма, не гарми ако индекса го няма
+#
+# print(my_dict.get(2))
+# print(my_dict.get(3))
 
 
 "ВРЪЩА СПИСЪК С VALUE"

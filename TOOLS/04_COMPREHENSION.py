@@ -21,14 +21,9 @@ number_list_2 = [4, 8, 2, 6, 9]
 
 
 "ДАВА СТОЙНОСТИ НА ПРОМЕНЛИВИТЕ ОТ ЛИСТ"
-# command = ["Sofia", "2", "10"]
-# num_1, num_2 = [int(x) for x in command if x.isdigit()]
-# print(f"{num_1}, {num_2}")
-# print(num_1, num_2)
-
-data = ["5", "Sofia"]
-digit = [int(x) if x.isdigit() else x for x in data]
-print(digit)
+# data = ["5", "Sofia"]
+# digit = [int(x) if x.isdigit() else x for x in data]
+# print(digit)
 
 
 "ВСИЧКИ ЛИ СА ЕДНАКВИ"              # връща дали всичк в листа са еднакви
