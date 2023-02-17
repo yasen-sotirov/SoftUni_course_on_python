@@ -10,34 +10,47 @@ def check_index(index):
 
 
 size = int(input())
-player_position = (0, 0)
+player_position = ()
 matrix = []
 movement = {"up": (-1, 0), "down": (1, 0), "left": (0, -1), "right": (0, 1)}
-counter = 0
-path_tracker = []
+coins = 0
 
 for row in range(size):
     data = input().split()
     matrix.append(data)
     if "P" in data:
         player_position = (row, data.index("P"))
+        matrix[row][player_position[1]] = 0
 
-
+path_tracker = [player_position]
 while True:
-    if counter >= 100:
+    if coins >= 100:
+        print(f"You won! You've collected {coins} coins.")
         break
 
     directions = input()
+    if directions not in movement:
+        continue
+
     row_index = player_position[0] + movement[directions][0]
     next_row = check_index(row_index)
     col_index = player_position[1] + movement[directions][1]
     next_col = check_index(col_index)
+
+    path_tracker.append((next_row, next_col))
+    player_position = (next_row, next_col)
     position = matrix[next_row][next_col]
 
-    if position.isdigit():
-        counter += int(position)
+    if position == "X":
+        print(f"Game over! You've collected {floor(coins / 2)} coins.")
+        break
+
+    else:
+        coins += int(position)
         matrix[next_row][next_col] = 0
-    elif position == "X":
-        print(f"Game over! You've collected {floor(counter/2)} coins.")
+
+print("Your path: ")
+for el in path_tracker:
+    print(f"[{el[0]}, {el[1]}]")
 
 
