@@ -206,3 +206,32 @@ names_ages = {"Ines": 27,
 #     return main_string
 #
 # print(concatenate("Soft", "UNI", "Is", "Grate", "!", UNI="Uni", Grate="Great"))
+
+
+
+"ПРОВЕРЯВА ДАЛИ ТЪРСЕНИТЕ ЕЛЕМЕНТИ ГИ ИМА В КЛЮЧОВЕТЕ"
+# gifts = {"Gemstone": 1, "Porcelain Sculpture": 1, "Gold": 1, "Diamond Jewellery": 1}
+#
+# if {"Gemstone", "Porcelain Sculpture"}.issubset(set(gifts.keys())) or \
+#         {"Gold", "Diamond Jewellery"}.issubset(set(gifts.keys())):
+#     print("The wedding presents are made!")
+
+
+
+"ВРЪЩА КЛЮЧ ПО ОПРЕДЕЛЕН ДИАПАЗОН"
+# score = int(input(f"give me the score between 100 and 499: "))
+# gift_list = {
+#     "Gemstone": lambda x: x if 100 <= x <= 199 else None,
+#     "Porcelain Sculpture": lambda x: x if 200 <= x <= 299 else None,
+#     "Gold": lambda x: x if 300 <= x <= 399 else None,
+#     "Diamond Jewellery": lambda x: x if 400 <= x <= 499 else None
+# }
+# crafted_gifts = {}
+#
+# for key in gift_list:
+#     if gift_list[key](score) is not None:
+#         if key not in crafted_gifts:
+#             crafted_gifts[key] = 0
+#         crafted_gifts[key] += 1
+# print(crafted_gifts)
+

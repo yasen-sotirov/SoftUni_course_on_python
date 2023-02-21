@@ -8,14 +8,6 @@ def is_outside(index, border):
         index = 0
     return index
 
-
-# create matrix
-# locate starting point
-# read the commands
-# check if is outside
-# read the deposits
-
-
 size = 6
 field = []
 position = [0, 0]

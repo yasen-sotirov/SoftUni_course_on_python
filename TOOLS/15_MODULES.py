@@ -66,9 +66,9 @@
 
 # pyfiglet  -   принтира текста с арт визия от тирета и слашове
 
-player = "WER"
-result = figlet_format(f"{player} won!")
-print(result)
+# player = "WER"
+# result = figlet_format(f"{player} won!")
+# print(result)
 
 
 # email validator       # pip install email_validator
@@ -79,3 +79,8 @@ print(result)
 
 
 
+
+# print([x if x =="e" else -1 for x in "sometext"])
+
+ma = [[1], [2], [3]]
+print(ma[3][0])
