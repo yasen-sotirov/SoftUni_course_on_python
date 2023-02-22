@@ -1,6 +1,7 @@
 "DICTIONARIES"      # values - mutable - променлив. може да се добавя променя ...
-                    # keys - immutable
+                    # keys - immutable - ключовете са уникални
                     # референтен тип данни
+                    # скоростта на търсене в речник е О1
 
 classes = {'1A': ["Ines", "Georgi", "Pesho"], '1B': ["Ivan", "Tosho", "Maria"]}   # един ключ може да садържа множество велюта
 students = {'№1': {'name': 'Pesho', 'ages': 12}, '№2': {'name': 'Ivan', 'ages': 11}}
