@@ -8,6 +8,9 @@ num_1, num_2, num_3 = 1, 2, 3
 # print(min(num_1, num_2, num_3))
 # print(max(num_1, num_2, num_3))
 
+# damage = int(input("дай точки вреда (кръвта е 100): "))
+# print(f"кръв: {max(100 - damage, 0)}")
+
 
 "MAX/MIN SIZE"
 # import sys
