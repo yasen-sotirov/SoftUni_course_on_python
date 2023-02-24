@@ -11,9 +11,12 @@
 
 
 class Book:
+    market = "Bookstore"
+    # клас атрибут, глобален за целия клас. всички инстанции ще го ползват
+
     def __init__(self, title, author, publisher, image_url, price, short_desc): # конструктор на класа
         self.tittle = str(title)         # характеристики property на класа
-        self.author = author
+        self.author = author            # стрибут на инстанцията, само тя си го ползва
         self.publisher = publisher
         self.iage_url = image_url,
         self.price = float(price)

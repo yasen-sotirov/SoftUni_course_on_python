@@ -35,3 +35,13 @@ number_list_2 = [4, 8, 2, 6, 9]
 
 "САМО ЕДНО ДА Е ВЯРНО"
 # print(any([True, False, False]))
+
+
+"F-STRING COMPREHENSION"
+# is_happy = True
+# print(f"Ivan {'is' if is_happy else 'is not'} happy")
+
+
+"TUPLE COMPREHENSION"
+# print(("first", "second")[False])
+# print(("first", "second")[True])
