@@ -15,15 +15,16 @@ class Book:
     # клас атрибут, глобален за целия клас. всички инстанции ще го ползват
 
     def __init__(self, title, author, publisher, image_url, price, short_desc): # конструктор на класа
-        self.tittle = str(title)         # характеристики property на класа
+        self.tittle = str(title)        # характеристики property на класа
         self.author = author            # стрибут на инстанцията, само тя си го ползва
         self.publisher = publisher
-        self.iage_url = image_url,
+        self.iage_url = image_url
         self.price = float(price)
-        self.short_desc = short_desc
-        self.type = "paper book"
+        self.short_desc = short_desc    # parameter
+        self.type = "paper book"        # default parameter
+        self.pokemons = []              # attribute
 
-    def open_the_book(self):         # чрез self достъпваме proprety-та на класа  # метод на класа, поведение на обекта
+    def open_the_book(self):            # чрез self достъпваме proprety-та на класа  # метод на класа, поведение на обекта
         return f"Opening the book '{self.tittle}' with author {self.author.first_name}"
 
 
