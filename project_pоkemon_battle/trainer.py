@@ -1,5 +1,4 @@
-from project.pokemon import Pokemon
-
+from project_pоkemon_battle.pokemon import Pokemon
 
 class Trainer:
     def __init__(self, name=None):

@@ -1,5 +1,5 @@
 """ 7.	*Robotics
-There is a robotics factory. The current project is assembly-line robots.
+There is a robotics factory. The current 08_pokemon_battle is assembly-line robots.
 Each robot has a processing time – it is the time in seconds the robot needs to process a product.
 When a robot is free, it should take a product for processing and log its name, product,
 and processing start time.
