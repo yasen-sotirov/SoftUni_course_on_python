@@ -1,11 +1,12 @@
 from project_pоkemon_battle.pokemon import Pokemon
 
+
 class Trainer:
     def __init__(self, name=None):
         self.name = name
         self.pokemons = []
 
-    def add_pokemon(self, pokemon):
+    def add_pokemon(self, pokemon: Pokemon):
         if pokemon.name not in [x.name for x in self.pokemons]:
             self.pokemons.append(pokemon)
             return f"Caught {pokemon.pokemon_details()}"
