@@ -1,5 +1,5 @@
-from project.player import Player
-from project.guild import Guild
+from player import Player
+from guild import Guild
 
 
 player = Player("George", 50, 100)

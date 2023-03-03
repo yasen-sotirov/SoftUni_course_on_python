@@ -1,5 +1,5 @@
-from project_pоkemon_battle.pokemon import Pokemon
-from project_pоkemon_battle.trainer import Trainer
+from pokemon import Pokemon
+from trainer import Trainer
 
 pokemon = Pokemon("Pikachu", 90)
 print(pokemon.pokemon_details())

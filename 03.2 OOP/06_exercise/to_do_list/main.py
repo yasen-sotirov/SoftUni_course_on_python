@@ -1,5 +1,5 @@
-from to_do_list.section import Section
-from to_do_list.task import Task
+from section import Section
+from task import Task
 
 first_task = Task("Make bed", "27/05/2020")
 print(first_task.change_name("Go to University"))
