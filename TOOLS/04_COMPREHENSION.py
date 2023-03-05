@@ -45,3 +45,7 @@ number_list_2 = [4, 8, 2, 6, 9]
 "TUPLE COMPREHENSION"
 # print(("first", "second")[False])
 # print(("first", "second")[True])
+
+
+"ИМА ЛИ ГЛАВНА БУКВА"
+# is_uppercase_presented = any([True for char in value if char.isupper()])
