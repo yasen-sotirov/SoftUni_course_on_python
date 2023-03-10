@@ -33,12 +33,21 @@ class Books:
                f"магазин: {Books.market}"
 
 
-class Author:
-    """ примерен клас използван в основния клас"""
+class Author:       # примерен клас използван в основния клас
     def __init__(self, first_name, last_name, *args):
-        self.first_name = first_name
+        self.__first_name = first_name      # ако искаме валидация в конструктора, махама „__“
         self.last_name = last_name
         self.args = args
+
+    @property                       # "autor_1.first_name" връща стойността
+    def first_name(self):
+        return self.__first_name
+
+    @first_name.setter                  # autor_1.first_name = "..." пуска setter-a
+    def first_name(self, value):        # служи за валидация и „ограничаване“ на достъпа
+        if len(value) < 3:
+            raise ValueError("Name must be more than 3 chars")
+        self.__first_name = value
 
 
 author_book_1 = Author("Уолтър", "Айзъксън", 'заглавие 1', 'заглавие 2', 'заглавие 3')
@@ -126,9 +135,7 @@ book_2 = Books("Егото", author_book_2, 18.50, "e-book")     # инстан�
 "DUNDER / MAGIC МЕТОДИ НА КЛАСА"
 
 "__class__"
-# print(book_1.__class__)                         # връща класа
-# print(book_1.__class__.__bases__[0])               # дава родителския клас
-# print(book_1.__class__.__bases__[0].__name__)
+print(book_1.__class__.__name__)        # достъпваме името на класа
 
 
 "__dict__"
