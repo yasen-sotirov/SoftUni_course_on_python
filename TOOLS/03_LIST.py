@@ -110,9 +110,7 @@ nested_list = [[1, 2, 3], [4, 5, 6]]
 # print(sum(number_list))
 # print("{:.2f}".format(sum(number_list)))
 
-"УМНОЖАВАНЕ, ДЕЛЕНЕ И ДР."
-# from functools import reduce
-print()
+
 
 "ВМЪКВА (нещо) ПО ИНДЕКС"
 # mix_list.insert(3, "Pesho")

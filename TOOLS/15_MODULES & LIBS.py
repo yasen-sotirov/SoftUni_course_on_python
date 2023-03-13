@@ -78,7 +78,14 @@
 # print(result)
 
 
-# email validator       # pip install email_validator
+"REDUCE - РЕДУЦИРА СПИСЪК С ЧИСЛА ЧРЕЗ УМНОЖЕНИЕ, ДЕЛЕНИЕ И т.н."
+# from functools import reduce
+# data = (2, 3, 5, 7, 3)
+# print(reduce(lambda x, y: x + y, data))
+
+
+
+"RANDOM"
 # import random
 # num = range(1, 100)
 # print(random.choice(num))
