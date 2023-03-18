@@ -41,10 +41,11 @@ txt_6 = "123 abc"
 
 
 
-"ПРЕМАХВА ЕЛЕМЕНТ ОТ НАЧАЛОТО И КРАЯ НА ТЕКСТА"
-text_to_strip = "-I like bananas!!"
-print(text_to_strip.strip("-!"))
-
+"ПРЕМАХВА ЕЛЕМЕНТ ОТ НАЧАЛОТО И/ИЛИ КРАЯ НА ТЕКСТА"
+# print(("   I like bananas   ").strip())
+# print(("----I like bananas!!").strip("-!"))
+# print(("----I like bananas!!").lstrip("-"))
+# print(("----I like bananas!!").rstrip("!"))
     # ще премахне празен ред
 
 

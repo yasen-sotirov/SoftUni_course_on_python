@@ -37,8 +37,25 @@
 # print(f"ascending by name length {sorted(name_year, key=lambda x: len(x))}")
 
 
+"БРОЙ ЕЛЕМЕНТИТЕ НА ФУНКЦИЯТА"
+# def custom_reduce(func, elements):
+#     argument_count = func.__code__.co_argcount
+#     print(argument_count)
+#
+# print(custom_reduce(lambda a, b: a + b, [1, 2, 3]))
 
 
+"CUSTOM REDUCE"
+# from collections import deque
+# def custom_reduce(func, elements):
+#     elements = deque(elements)
+#
+#     argument_count = func.__code__.co_argcount
+#     while len(elements) > 1:
+#         argument = [elements.popleft() for _ in range(argument_count)]
+#         elements.appendleft(func(*argument))
+#     return elements[0]
+# print(custom_reduce(lambda a, b: a + b, [1, 2, 3, 1, 2, 3]))
 
 
 # List of Tuples Declaration
