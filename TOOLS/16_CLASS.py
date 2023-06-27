@@ -21,6 +21,7 @@ class Books:
         self.price = float(price)
         self.type = type_book          # default parameter
         self.notes = []
+        self.is_rented: bool = False
 
     def change_price(self, new_price):      # „метод“ дефинира действията на класа, променя атрибутите
         self.price = new_price              # чрез self достъпваме proprety-та на класа
