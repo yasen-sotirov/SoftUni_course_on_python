@@ -1,7 +1,8 @@
 """ Encoded Messages
 Description
 
-Krasi is tasked to invent a program for validating messages. He creates a program which from every message that is received would create a corresponding sequence of encoded characters. That way he would be able to verify the authenticity of the message.
+Krasi is tasked to invent a program for validating messages.
+He creates a program which from every message that is received would create a corresponding sequence of encoded characters. That way he would be able to verify the authenticity of the message.
 
 The encoding algorithm will work as described below:
 

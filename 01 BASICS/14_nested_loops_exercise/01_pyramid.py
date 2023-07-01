@@ -12,3 +12,4 @@ for row in range(1, number + 1):
     if all_is_print:
         break
     print()
+
