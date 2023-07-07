@@ -1,7 +1,5 @@
 "FILE HENDLING"  #
 
-file_1 = open("example.txt")
-file_2 = open("../../python_course_softuni/03.1_advanced/15_file_handling/text.txt") # релативен път
 
 
 

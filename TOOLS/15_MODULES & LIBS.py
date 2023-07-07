@@ -73,9 +73,9 @@
 
 # pyfiglet  -   принтира текста с арт визия от тирета и слашове
 
-# player = "WER"
-# result = figlet_format(f"{player} won!")
-# print(result)
+player = "WER"
+result = figlet_format(f"{player} won!")
+print(result)
 
 
 "REDUCE - РЕДУЦИРА СПИСЪК С ЧИСЛА ЧРЕЗ УМНОЖЕНИЕ, ДЕЛЕНИЕ И т.н."
