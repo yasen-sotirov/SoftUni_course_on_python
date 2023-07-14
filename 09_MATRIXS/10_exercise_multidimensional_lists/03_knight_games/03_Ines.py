@@ -29,3 +29,4 @@ for row_index in range(n):
     for col_index in range(n):
         if matrix[row_index][col_index] == "K":
             kills = calculate_kills(matrix, row_index, col_index)
+
