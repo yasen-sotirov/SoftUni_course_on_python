@@ -11,10 +11,10 @@ text = "Hello, I'm @22 yeas old, and you are @26 years old, not the @136. " \
 
 
 "re.findall - ВРЪЩА ЛИСТ СЪС ВСИЧКИ СЪВППАДЕНИЯ"
-# text = "@22, 154, 235, 33"
-# print(re.findall("\d{2}", text))
+text = "@22, 154, 235, 33"
+print(re.findall("\d{2}", text))
 
-# print(len(re.findall("the", text, re.IGNORECASE)))    # игнорира главни букви
+print(len(re.findall("the", text, re.IGNORECASE)))    # игнорира главни букви
 
 
 

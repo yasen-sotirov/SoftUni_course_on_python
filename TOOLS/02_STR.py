@@ -27,17 +27,17 @@ txt_6 = "123 abc"
 
 
 "ЗАМЕНЯ ЕЛЕМЕНТ"
-# edited = txt.replace("bananas", "apples apples apples")
-# print(edited)
-# print(edited.replace("apples", "", 1))     # премахва всичките или брой съвпадения
+edited = txt.replace("bananas", "apples apples apples")
+print(edited)
+print(edited.replace("apples", "", 1))     # премахва всичките или брой съвпадения
 
-# def concatenate(*args, **kwargs):
-#     main_string = ''.join(args)
-#     for key, value in kwargs.items():
-#         if key in main_string:
-#             main_string = main_string.replace(key, value)
-#     return main_string
-# print(concatenate("Soft", "UNI", "Is", "Grate", "!", UNI="Uni", Grate="Great"))
+def concatenate(*args, **kwargs):
+    main_string = ''.join(args)
+    for key, value in kwargs.items():
+        if key in main_string:
+            main_string = main_string.replace(key, value)
+    return main_string
+print(concatenate("Soft", "UNI", "Is", "Grate", "!", UNI="Uni", Grate="Great"))
 
 
 
