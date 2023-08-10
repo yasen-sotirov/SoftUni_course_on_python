@@ -69,5 +69,5 @@
 
 
 "ПРОВЕРЯВА ФАЛИ ЕЛЕМЕНТА Е ДИРЕКТОРИЯ"
-from os import path
-print(path.isdir(file_1))
+# from os import path
+# print(path.isdir(file_1))
