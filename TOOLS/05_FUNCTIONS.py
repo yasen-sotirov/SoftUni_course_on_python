@@ -1,8 +1,9 @@
 "FUNCTIONS"  # лекция с Инес Иванова  https://softuni.bg/trainings/resources/video/61350/video-09-june-2021-ines-ivanova-python-fundamentals-may-2021/3368
 
-# Параметъ - променливите, с които работи функцията
+# Параметъ = променливите, с които работи функцията
 # Аргумент = променливите, които подаваме на функцията
-
+# позиционни аргументи - ненаименовани аргументи
+# позиционни аргументи - „param_1 = 25“   по четимо е
 
 "ПОКАЗBА ДОКУМЕНТАЦИШТА ЗА ДАДЕНА ФУНКЦИШ"
 # def example_func():
@@ -17,28 +18,45 @@
 # lam_func = lambda a, b : a * b
 # print(lam_func(5, 6))
 
-name_year = {"ABCC": 4, "CABB": 7, "ABB": 3, "BB": 5, "AB": 2, "AABBB": 1, "BBC": 6}
-
-askii = sorted(name_year, key=lambda x: x)
-print(f"нараства азбучно {askii}")
-print(f"ascending ???   {sorted(name_year, key=lambda x: x[0])}")
-print(f"ascending ???   {sorted(name_year, key=lambda x: x[1])}")
-print(f"нараства азбучно и по дължина {sorted(name_year, key=lambda x: len(x))}")
-
-num_list = []
-for el in askii:
-    char_sum = 0
-    for char in el:
-        char_sum += ord(char)
-    num_list.append(char_sum)
-
-print(num_list)
+# name_year = {"ABCC": 4, "CABB": 7, "ABB": 3, "BB": 5, "AB": 2, "AABBB": 1, "BBC": 6}
+#
+# askii = sorted(name_year, key=lambda x: x)
+# print(f"нараства азбучно {askii}")
+# print(f"ascending ???   {sorted(name_year, key=lambda x: x[0])}")
+# print(f"ascending ???   {sorted(name_year, key=lambda x: x[1])}")
+# print(f"нараства азбучно и по дължина {sorted(name_year, key=lambda x: len(x))}")
+#
+# num_list = []
+# for el in askii:
+#     char_sum = 0
+#     for char in el:
+#         char_sum += ord(char)
+#     num_list.append(char_sum)
+#
+# print(num_list)
 
 # print(f"ascending by name length {sorted(name_year, key=lambda x: len(x))}")
 
 
+"БРОЙ ЕЛЕМЕНТИТЕ НА ФУНКЦИЯТА"
+# def custom_reduce(func, elements):
+#     argument_count = func.__code__.co_argcount
+#     print(argument_count)
+#
+# print(custom_reduce(lambda a, b: a + b, [1, 2, 3]))
 
 
+"CUSTOM REDUCE"
+# from collections import deque
+# def custom_reduce(func, elements):
+#     elements = deque(elements)
+#
+#     argument_count = func.__code__.co_argcount
+#     while len(elements) > 1:
+#         argument = [elements.popleft() for _ in range(argument_count)]
+#         elements.appendleft(func(*argument))
+#     return elements[0]
+# print(custom_reduce(lambda a, b: a + b, [1, 2, 3, 1, 2, 3]))
 
 
 # List of Tuples Declaration

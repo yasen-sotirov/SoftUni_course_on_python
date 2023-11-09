@@ -5,14 +5,17 @@ import re
 # https://pythex.org
 # https://www.w3schools.com/python/python_regex.asp
 
-# text = "Hello, I'm @22 yeas old, and you are @26 years old, not the @136. " \
-#        "The waterfall was so high, that the child couldn't see its peak"
+text = "Hello, I'm @22 yeas old, and you are @26 years old, not the @136. " \
+       "The waterfall was so high, that the child couldn't see its peak"
 
 
 
 "re.findall - ВРЪЩА ЛИСТ СЪС ВСИЧКИ СЪВППАДЕНИЯ"
-# text = "@22, 154, 235, 33"
-# print(re.findall("\d{2}", text))
+text = "@22, 154, 235, 33"
+print(re.findall("\d{2}", text))
+
+print(len(re.findall("the", text, re.IGNORECASE)))    # игнорира главни букви
+
 
 
 "re.finditer - при групи в регекса"
@@ -33,13 +36,14 @@ import re
 
 
 
+
 "re.search - ВРЪЩА ПЪРВИЯ МАЧ ОТ ТЕКСТ С МНОГО РЕДОВЕ"
-text = "peter smith, peter Smith, peter Smith, " \
-       "PEter Smith, Ivan Peshov, Lily Everett"
-result = re.search(r"\b[A-Z][a-z]+ [A-Z][a-z]+\b", text)
-result = result.group()
-print(result)
-print(type(result))
+# text = "peter smith, peter Smith, peter Smith, " \
+#        "PEter Smith, Ivan Peshov, Lily Everett"
+# result = re.search(r"\b[A-Z][a-z]+ [A-Z][a-z]+\b", text)
+# result = result.group()
+# print(result)
+# print(type(result))
 
 
 

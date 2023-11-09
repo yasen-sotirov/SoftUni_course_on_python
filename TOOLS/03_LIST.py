@@ -110,9 +110,7 @@ nested_list = [[1, 2, 3], [4, 5, 6]]
 # print(sum(number_list))
 # print("{:.2f}".format(sum(number_list)))
 
-"УМНОЖАВАНЕ, ДЕЛЕНЕ И ДР."
-# from functools import reduce
-print()
+
 
 "ВМЪКВА (нещо) ПО ИНДЕКС"
 # mix_list.insert(3, "Pesho")
@@ -131,12 +129,14 @@ print()
 
 
 "БРОЙ КОЛКО (неща) ИМА В ЛИСТА"
-# print(mix_list.count('b'))
+# print(letters_list.count('o'))
+# print(mix_list.count("b"))
 
 
 "ДАВА ИНДЕКС И ЕЛЕМЕНТА, КОЙТО Е ТАМ"
 # for index, letter in enumerate(mix_list):
 #     print(index, letter)
+
 
 
 "КОПИРА ЛИСТА"          # и работим върху копието, оригинала се запазва
@@ -169,9 +169,9 @@ print()
 # print(letters_list)
 # print(sorted(letters_list))
 
-name_list = ["Ali", 'Marry', 'Kim', 'Teddy', 'Monika', 'John']
-sorted_list = sorted(name_list, key=lambda item: (-len(item), item))
-print(sorted_list)
+# name_list = ["Ali", 'Marry', 'Kim', 'Teddy', 'Monika', 'John']
+# sorted_list = sorted(name_list, key=lambda item: (-len(item), item))
+# print(sorted_list)
 
 
 "ОБРЪЩА ЛИСТА ОТЗАНД НАПРЕД"
@@ -277,7 +277,7 @@ print(sorted_list)
 
 
 "ЕДНАКВИ ЛИ СА"              # връща дали всичк в итеръбъла са еднакви
-# print(all(number_list_2))
+print(all(number_list_2))
 # print(all([isinstance(x, int) for x in number_list_2]))
 # print(all([isinstance(x, str) for x in letters_list]))
 # print(all([isinstance(x, str) for x in mix_list]))

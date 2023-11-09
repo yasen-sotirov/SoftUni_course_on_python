@@ -27,24 +27,26 @@ txt_6 = "123 abc"
 
 
 "ЗАМЕНЯ ЕЛЕМЕНТ"
-# edited = txt.replace("bananas", "apples apples apples")
-# print(edited)
-# print(edited.replace("apples", "", 1))     # премахва всичките или брой съвпадения
+edited = txt.replace("bananas", "apples apples apples")
+print(edited)
+print(edited.replace("apples", "", 1))     # премахва всичките или брой съвпадения
 
-# def concatenate(*args, **kwargs):
-#     main_string = ''.join(args)
-#     for key, value in kwargs.items():
-#         if key in main_string:
-#             main_string = main_string.replace(key, value)
-#     return main_string
-# print(concatenate("Soft", "UNI", "Is", "Grate", "!", UNI="Uni", Grate="Great"))
+def concatenate(*args, **kwargs):
+    main_string = ''.join(args)
+    for key, value in kwargs.items():
+        if key in main_string:
+            main_string = main_string.replace(key, value)
+    return main_string
+print(concatenate("Soft", "UNI", "Is", "Grate", "!", UNI="Uni", Grate="Great"))
 
 
 
-"ПРЕМАХВА ЕЛЕМЕНТ ОТ НАЧАЛОТО И КРАЯ НА ТЕКСТА"
-# print(txt)
-# print(txt.strip("-!"))
-# print(txt.strip())
+"ПРЕМАХВА ЕЛЕМЕНТ ОТ НАЧАЛОТО И/ИЛИ КРАЯ НА ТЕКСТА"
+# print(("   I like bananas   ").strip())
+# print(("----I like bananas!!").strip("-!"))
+# print(("----I like bananas!!").lstrip("-"))
+# print(("----I like bananas!!").rstrip("!"))
+    # ще премахне празен ред
 
 
 "ДОБАВЯ ЕЛЕМЕНТ ОТ НАЧАЛОТО И КРАЯ НА ТЕКСТА"
@@ -102,3 +104,17 @@ txt_6 = "123 abc"
 # print(f'{text:#<20}')
 # print(f'{text:_>20}')
 # print(f'{text:.^20}')
+
+
+
+"ЕВАЛЮИРА СТРИНГА ДО ЧИСЛА"
+# print(eval(f"2, 4, 5"))
+
+# from functools import reduce
+# def operate(sign, *args):
+#     return reduce(lambda x, y: eval(f"{x} {sign} {y}"), args)
+# print(operate("+", 1, 2, 3))
+
+"БРОЙ ЗНАЦИТЕ"
+# from string import punctuation
+# print(len([el for el in txt if el in punctuation]))

@@ -1,6 +1,7 @@
 "DICTIONARIES"      # values - mutable - променлив. може да се добавя променя ...
-                    # keys - immutable
+                    # keys - immutable - ключовете са уникални
                     # референтен тип данни
+                    # скоростта на търсене в речник е О1
 
 classes = {'1A': ["Ines", "Georgi", "Pesho"], '1B': ["Ivan", "Tosho", "Maria"]}   # един ключ може да садържа множество велюта
 students = {'№1': {'name': 'Pesho', 'ages': 12}, '№2': {'name': 'Ivan', 'ages': 11}}
@@ -27,10 +28,11 @@ names_ages = {"Ines": 27,
 #     classes[key].append("from the loop")
 # print(classes)
 
+# num_dict = {'a': 1, 'b': 2, 'c': 3}
 # for key in num_dict:
 #     num_dict[key] *= 2
 # print(num_dict)
-
+# {'a': 2, 'b': 4, 'c': 6}
 
 "ПРОМЯНА В РЕЧНИКА"
 # my_dict["eyes color"] = "green"
@@ -55,7 +57,7 @@ names_ages = {"Ines": 27,
 
 "ИЗВИКВАНЕ НА VALUE ПО КЛЮЧ"
 # print(my_dict["b"])       # вика ключ 2, тук индекси няма, не гарми ако индекса го няма
-
+#
 # print(my_dict.get(2))
 # print(my_dict.get(3))
 
@@ -96,6 +98,15 @@ names_ages = {"Ines": 27,
 
 # students_2 = {"A": [5, 6], "C": [2, 4], "B": [4, 3, 5]}
 # print(sorted(students_2.items(), key=lambda kvpt: len(kvpt[1])))
+
+
+"С ЛАМБДА"
+# a = 4
+# b = 3
+# c = 2
+# dict = {"*": lambda a, b, c: a + b - c}
+# print(dict["*"](a, b, c))
+
 
 
 "ВРЪЩА VALUE"       # a
@@ -196,3 +207,32 @@ names_ages = {"Ines": 27,
 #     return main_string
 #
 # print(concatenate("Soft", "UNI", "Is", "Grate", "!", UNI="Uni", Grate="Great"))
+
+
+
+"ПРОВЕРЯВА ДАЛИ ТЪРСЕНИТЕ ЕЛЕМЕНТИ ГИ ИМА В КЛЮЧОВЕТЕ"
+# gifts = {"Gemstone": 1, "Porcelain Sculpture": 1, "Gold": 1, "Diamond Jewellery": 1}
+#
+# if {"Gemstone", "Porcelain Sculpture"}.issubset(set(gifts.keys())) or \
+#         {"Gold", "Diamond Jewellery"}.issubset(set(gifts.keys())):
+#     print("The wedding presents are made!")
+
+
+
+"ВРЪЩА КЛЮЧ ПО ОПРЕДЕЛЕН ДИАПАЗОН"
+# score = int(input(f"give me the score between 100 and 499: "))
+# gift_list = {
+#     "Gemstone": lambda x: x if 100 <= x <= 199 else None,
+#     "Porcelain Sculpture": lambda x: x if 200 <= x <= 299 else None,
+#     "Gold": lambda x: x if 300 <= x <= 399 else None,
+#     "Diamond Jewellery": lambda x: x if 400 <= x <= 499 else None
+# }
+# crafted_gifts = {}
+#
+# for key in gift_list:
+#     if gift_list[key](score) is not None:
+#         if key not in crafted_gifts:
+#             crafted_gifts[key] = 0
+#         crafted_gifts[key] += 1
+# print(crafted_gifts)
+
